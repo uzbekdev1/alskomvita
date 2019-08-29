@@ -2,7 +2,7 @@ import { Controller, Get, Param, ParseIntPipe } from '@nestjs/common';
 import { ProductsService } from './products.service';
 import { Observable } from 'rxjs';
 import { Product } from './product.entity';
-import { ApiUseTags } from '@nestjs/swagger';
+import {ApiImplicitParam, ApiUseTags} from '@nestjs/swagger';
 
 @ApiUseTags('products')
 @Controller('products')
@@ -17,6 +17,7 @@ export class ProductsController {
   }
 
   @Get(':id')
+  @ApiImplicitParam({name: 'id'})
   getProduct(@Param('id', new ParseIntPipe()) id) {
     return this.productsService.getProduct(id);
   }

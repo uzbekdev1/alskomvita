@@ -126,13 +126,13 @@ function render (req, res, next, data, args) {
     data.oneToOne.type = 'one';
     data.manyToOne.type = 'many';
     res.locals.inline = [data.oneToOne, data.manyToOne];
-        
+
     res.locals.partials = {
         content:  'editview',
         view:     'editview/view',
         inline:   'editview/inline',
         column:   'editview/column'
     };
-    
+
     next();
 }

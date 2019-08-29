@@ -1,15 +1,15 @@
 {
     "agent": {
-        "slug": "agent",
+        "slug": "Agent",
         "table": {
             "name": "agent",
             "pk": "id",
-            "verbose": "agent"
+            "verbose": "Agent"
         },
         "columns": [
             {
                 "name": "id",
-                "verbose": "id",
+                "verbose": "#",
                 "control": {
                     "text": true
                 },
@@ -25,7 +25,7 @@
             },
             {
                 "name": "fullName",
-                "verbose": "fullName",
+                "verbose": "Full Name",
                 "control": {
                     "text": true
                 },
@@ -41,7 +41,7 @@
             },
             {
                 "name": "phone",
-                "verbose": "phone",
+                "verbose": "Phone",
                 "control": {
                     "text": true
                 },
@@ -68,16 +68,16 @@
         }
     },
     "product": {
-        "slug": "product",
+        "slug": "Product",
         "table": {
             "name": "product",
             "pk": "id",
-            "verbose": "product"
+            "verbose": "Product"
         },
         "columns": [
             {
                 "name": "id",
-                "verbose": "id",
+                "verbose": "#",
                 "control": {
                     "text": true
                 },
@@ -93,7 +93,7 @@
             },
             {
                 "name": "name",
-                "verbose": "name",
+                "verbose": "Name",
                 "control": {
                     "text": true
                 },
@@ -109,7 +109,7 @@
             },
             {
                 "name": "description",
-                "verbose": "description",
+                "verbose": "Description",
                 "control": {
                     "textarea": true
                 },
@@ -125,7 +125,7 @@
             },
             {
                 "name": "price",
-                "verbose": "price",
+                "verbose": "Price",
                 "control": {
                     "number": true
                 },
@@ -141,7 +141,7 @@
             },
             {
                 "name": "isActive",
-                "verbose": "isActive",
+                "verbose": "Is active?",
                 "control": {
                     "radio": true,
                     "options": [
@@ -172,16 +172,16 @@
         }
     },
     "branch": {
-        "slug": "branch",
+        "slug": "Branch",
         "table": {
             "name": "branch",
             "pk": "id",
-            "verbose": "branch"
+            "verbose": "Branch"
         },
         "columns": [
             {
                 "name": "id",
-                "verbose": "id",
+                "verbose": "#",
                 "control": {
                     "text": true
                 },
@@ -197,7 +197,7 @@
             },
             {
                 "name": "name",
-                "verbose": "name",
+                "verbose": "Name",
                 "control": {
                     "text": true
                 },
@@ -213,7 +213,7 @@
             },
             {
                 "name": "address",
-                "verbose": "address",
+                "verbose": "Address",
                 "control": {
                     "textarea": true
                 },
@@ -229,7 +229,7 @@
             },
             {
                 "name": "phone",
-                "verbose": "phone",
+                "verbose": "Phone",
                 "control": {
                     "text": true
                 },
