@@ -1,0 +1,11 @@
+Database:
+ type: pg
+ name: alskom
+ user: postgres
+ password: postgres
+ schema: public
+
+Server:
+ port: 5000
+ user: admin
+ password: alSK2019

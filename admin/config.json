@@ -1,0 +1,16 @@
+{
+    "pg": {
+        "database": "alskom",
+        "user": "postgres",
+        "password": "postgres",
+        "schema": "public"
+    },
+    "server": {
+        "port": 5000
+    },
+    "app": {
+        "layouts": true,
+        "themes": true,
+        "languages": true
+    }
+}
