@@ -1,5 +1,4 @@
-# alskom
-Alskom
+# Alskom
 
 - Admin - Adminstration database
 - Site - Landing pages
