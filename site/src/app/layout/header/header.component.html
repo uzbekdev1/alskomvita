@@ -1,4 +1,4 @@
-<mat-grid-list cols="2" rowHeight="1:1"  [ngStyle.lt-md]="{'margin-top': '30px', 'margin-bottom': '30px'}">
+<mat-grid-list cols="2" rowHeight="1:1" [ngStyle.lt-md]="{'margin-top': '30px', 'margin-bottom': '30px'}">
     <mat-grid-tile>
         <section id="heading" class="mat-typography">
             <div class="container">
@@ -19,8 +19,10 @@
 
                     <div fxLayout="row" [class.animated]="isHeadingBtn" [class.fadeIn]="isHeadingBtn"
                          [class.heading-btn]="isHeadingBtn">
-                        <a class="heading-button-left" mat-flat-button color="accent">Продукты</a>
-                        <a class="heading-button-right" mat-stroked-button color="accent">Страховой случай</a>
+                        <a class="heading-button-left" href="#products" mat-flat-button color="accent">
+                            Продукты</a>
+                        <a class="heading-button-right" href="#resources" mat-stroked-button color="accent">
+                            Страховой случай</a>
                     </div>
 
                 </div>
@@ -28,6 +30,6 @@
         </section>
     </mat-grid-tile>
     <mat-grid-tile>
-        <img src="assets/img/atest_sm.jpg"/>
+        <img src="assets/img/atest.jpg"/>
     </mat-grid-tile>
 </mat-grid-list>

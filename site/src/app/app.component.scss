@@ -70,6 +70,16 @@ h1.navigation-company-name {
   background: none;
 }
 
+.mat-menu-item {
+  color: #f18217;
+  font-size: 18px;
+}
+
+.mat-menu-item:hover {
+  color: #673ab7;
+  background: none;
+}
+
 
 .navigation-spacer {
   flex: 1 1 auto;

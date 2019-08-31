@@ -1,0 +1,63 @@
+<section id="products" [ngStyle.lt-md]="{'margin-top': '30px', 'margin-bottom': '30px'}">
+    <div class="container portfolio-card">
+
+        <div class="portfolio-section portfolio-heading mat-typography" fxLayout="column" fxLayoutAlign="center center">
+            <div>
+                <h2 [ngStyle.lt-md]="{'margin-bottom': '15px'}">Продукты</h2>
+            </div>
+        </div>
+
+        <div fxLayout="row" fxLayout.lt-sm="column" fxLayoutWrap="nowrap" fxLayoutGap="30px" fxLayoutGap.sm="8px">
+            <div fxFlex="25" [about]>
+                <mat-card class="p-0 m-0">
+                    <img mat-card-image width="300" height="150" src="assets/img/products/1.jpg">
+                    <mat-card-content>
+                        <h5 class="mat-headline" [ngStyle.sm]="{'font-size': '16px'}">Устройство
+                            E-kalit </h5>
+                        <p class="mat-subheading-2" [ngStyle.sm]="{'font-size': '12px'}">
+                            E-KALIT специально разработано для использования в целях защищенного хранения секретных
+                            ключей шифрования и закрытых ключей электронной цифровой подписи.
+                        </p>
+                    </mat-card-content>
+                </mat-card>
+            </div>
+            <div fxFlex="25" [about]>
+                <mat-card class="p-0 m-0">
+                    <img mat-card-image width="300" height="150" src="assets/img/products/2.jpg">
+                    <mat-card-content>
+                        <h5 class="mat-headline" [ngStyle.sm]="{'font-size': '16px'}">Хранение файлов S-FILES </h5>
+                        <p class="mat-subheading-2" [ngStyle.sm]="{'font-size': '12px'}">
+                            Система S-FILES предназначена для обеспечения безопасности, целостности и защиты от
+                            несанкционированного доступа к папкам и файлам на персональном компьютере или внешних
+                        </p>
+                    </mat-card-content>
+                </mat-card>
+            </div>
+            <div fxFlex="25" [about]>
+                <mat-card class="p-0 m-0">
+                    <img mat-card-image width="300" height="150"  src="assets/img/products/3.jpg">
+                    <mat-card-content>
+                        <h5 class="mat-headline" [ngStyle.sm]="{'font-size': '16px'}">Цифровая подпись</h5>
+                        <p class="mat-subheading-2" [ngStyle.sm]="{'font-size': '12px'}">
+                            Сертификаты ключа ЭЦП Центра регистрации ключей электронной подписи при ГУП "UNICON.UZ"
+                            соответствуют международным рекомендациям
+                        </p>
+                    </mat-card-content>
+                </mat-card>
+            </div>
+            <div fxFlex="25" [about]>
+                <mat-card class="p-0 m-0">
+                    <img mat-card-image width="300" height="150" src="assets/img/products/4.jpg">
+                    <mat-card-content>
+                        <h5 class="mat-headline" [ngStyle.sm]="{'font-size': '16px'}">Документооборота E-ijro </h5>
+                        <p class="mat-subheading-2" [ngStyle.sm]="{'font-size': '12px'}">
+                            Система E-ijro предназначена для обеспечения межведомственного электронного взаимодействия
+                            посредством взаимной интеграции внутренних
+                        </p>
+                    </mat-card-content>
+                </mat-card>
+            </div>
+        </div>
+
+    </div>
+</section>

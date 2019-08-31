@@ -10,21 +10,23 @@
     </a>
     <mat-nav-list class="navigation-list" fxLayout="row" fxShow="false" fxShow.gt-xs="true">
 
-        <a mat-list-item [matMenuTriggerFor]="belowMenu">О нас</a>
-        <a mat-list-item href="#news">Новости</a>
-        <a mat-list-item href="#portfolio">Услуги</a>
-        <a mat-list-item href="#pricing">Продукты</a>
-        <a mat-list-item href="#blog">Филиалы</a>
-        <a mat-list-item href="#blog">Вакансии</a>
+        <a mat-list-item [matMenuTriggerFor]="belowMenu">Компания</a>
+        <a mat-list-item href="#services">Услуги</a>
+        <a mat-list-item href="#products">Продукты</a>
+        <a mat-list-item href="#resources">Ресурсы</a>
         <a mat-list-item href="#contact">Контакты</a>
 
-        <mat-menu #belowMenu="matMenu" yPosition="below">
-            <button href="#about-company" mat-menu-item>Item 1</button>
-            <button href="#news-listing" mat-menu-item>Item 2</button>
+        <mat-menu #belowMenu="matMenu" xPosition="after">
+            <a href="#about" mat-menu-item>О нас</a>
+            <a href="#leaderships" mat-menu-item>Руководство</a>
+            <a href="#branches" mat-menu-item>Наши филиалы</a>
+            <a href="#vacancies" mat-menu-item>Вакансии</a>
+            <a href="#news" mat-menu-item>Новости</a>
         </mat-menu>
 
     </mat-nav-list>
-    <span class="navigation-spacer"></span>
+    <span class="navigation-spacer">
+    </span>
     <button id="contact-fab-button" (click)="openDialog()" mat-flat-button color="primary" matTooltip="Изменение языка"
             [matTooltipPosition]="'left'">
         <img src="assets/img/flags/{{currentLang}}.png"/>
@@ -44,11 +46,10 @@
             </a>
 
             <a mat-list-item href="#about">О нас</a>
-            <a mat-list-item href="#news">Новости</a>
-            <a mat-list-item href="#portfolio">Услуги</a>
-            <a mat-list-item href="#pricing">Продукты</a>
-            <a mat-list-item href="#blog">Филиалы</a>
-            <a mat-list-item href="#blog">Вакансии</a>
+            <a mat-list-item href="#services">Услуги</a>
+            <a mat-list-item href="#products">Продукты</a>
+            <a mat-list-item href="#resources">Ресурсы</a>
+            <a mat-list-item href="#vacancies">Вакансии</a>
             <a mat-list-item href="#contact">Контакты</a>
 
         </mat-nav-list>
@@ -59,9 +60,13 @@
         <app-header></app-header>
 
         <app-about></app-about>
-        <app-portfolio></app-portfolio>
-        <app-pricing></app-pricing>
-        <app-blog></app-blog>
+        <app-leaderships></app-leaderships>
+        <app-branches></app-branches>
+        <app-resources></app-resources>
+        <app-services></app-services>
+        <app-products></app-products>
+        <app-vacancies></app-vacancies>
+        <app-news></app-news>
         <app-contact></app-contact>
 
         <app-footer></app-footer>

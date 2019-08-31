@@ -1,5 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 
+declare var $: any;
+
 @Component({
     selector: 'app-header',
     templateUrl: './header.component.html',
@@ -15,6 +17,16 @@ export class HeaderComponent implements OnInit {
     }
 
     ngOnInit() {
+
+        setTimeout(() => {
+
+            $('#owl-demo').owlCarousel({
+                autoPlay: 3000,
+                items: 1
+            });
+
+        }, 5000)
+
     }
 
 }
