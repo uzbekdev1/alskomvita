@@ -30,7 +30,6 @@ export function createTranslateLoader(http: HttpClient) {
 @NgModule({
     declarations: [
         AppComponent,
-        LeadershipsComponent,
         AboutComponent,
         HeaderComponent,
         ServicesComponent,
