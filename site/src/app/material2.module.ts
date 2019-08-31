@@ -4,6 +4,9 @@ import {
     MatSidenavModule, MatToolbarModule, MatListModule, MatTooltipModule, MatTabsModule, MatTableModule,
     MatFormFieldModule, MatInputModule, MatDialogModule
 } from '@angular/material';
+import {MatRadioModule} from '@angular/material/radio';
+import {MatGridListModule} from '@angular/material/grid-list';
+import {MatMenuModule} from '@angular/material/menu';
 
 @NgModule({
 
@@ -21,7 +24,10 @@ import {
         MatTableModule,
         MatFormFieldModule,
         MatInputModule,
-        MatDialogModule
+        MatDialogModule,
+        MatRadioModule,
+        MatGridListModule,
+        MatMenuModule,
     ],
     exports: [
         MatButtonModule,
@@ -37,7 +43,10 @@ import {
         MatTableModule,
         MatFormFieldModule,
         MatInputModule,
-        MatDialogModule
+        MatDialogModule,
+        MatRadioModule,
+        MatGridListModule,
+        MatMenuModule,
     ]
 })
 export class Material2Module {
