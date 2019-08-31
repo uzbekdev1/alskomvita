@@ -24,9 +24,10 @@ async function bootstrap() {
         .setBasePath(basePath)
         .setDescription('The Alskom API description')
         .setVersion('1.0')
-        .addTag('agents', 'Agents')
+        .addTag('vacancies', 'Vacancies')
         .addTag('branches', 'Branches')
         .addTag('products', 'Products')
+        .addTag('news', 'News')
         // .addBearerAuth('Authorization', 'header')
         .build();
     const document = SwaggerModule.createDocument(app, options);

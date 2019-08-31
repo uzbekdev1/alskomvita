@@ -1,17 +1,18 @@
-import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
+import {Column, Entity, PrimaryGeneratedColumn} from 'typeorm';
 
-@Entity()
-export class Branch {
-  @PrimaryGeneratedColumn()
-  id: number;
+@Entity("branches")
+export class BranchEntity {
 
-  @Column({ length: 50 })
-  name: string;
+    @PrimaryGeneratedColumn()
+    id: number;
 
-  @Column('text')
-  address: string;
+    @Column({length: 50})
+    name: string;
 
-  @Column()
-  phone: string;
+    @Column({length: 250})
+    address: string;
+
+    @Column({length: 25})
+    phone: string;
 
 }

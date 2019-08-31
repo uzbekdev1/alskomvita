@@ -1,25 +1,26 @@
-import { Controller, Get, Param, ParseIntPipe } from '@nestjs/common';
-import { ProductsService } from './products.service';
-import { Observable } from 'rxjs';
-import { Product } from './product.entity';
+import {Controller, Get, Param, ParseIntPipe} from '@nestjs/common';
+import {ProductsService} from './products.service';
+import {Observable} from 'rxjs';
+import {ProductEntity} from './product.entity';
 import {ApiImplicitParam, ApiUseTags} from '@nestjs/swagger';
 
 @ApiUseTags('products')
 @Controller('products')
 //@ApiBearerAuth()
 export class ProductsController {
-  constructor(private readonly productsService: ProductsService) {
-  }
 
-  @Get()
-  getAllProducts(): Observable<Product[]> {
-    return this.productsService.findAll();
-  }
+    constructor(private   productsService: ProductsService) {
+    }
 
-  @Get(':id')
-  @ApiImplicitParam({name: 'id'})
-  getProduct(@Param('id', new ParseIntPipe()) id) {
-    return this.productsService.getProduct(id);
-  }
+    @Get()
+    getAll(): Observable<ProductEntity[]> {
+        return this.productsService.getAll();
+    }
+
+    @Get(':id')
+    @ApiImplicitParam({name: 'id'})
+    getItem(@Param('id', new ParseIntPipe()) id) {
+        return this.productsService.getItem(id);
+    }
 
 }
