@@ -1,19 +1,21 @@
-import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
+import {Column, Entity, PrimaryGeneratedColumn} from 'typeorm';
 
-@Entity()
-export class Product {
-  @PrimaryGeneratedColumn()
-  id: number;
+@Entity("products")
+export class ProductEntity {
 
-  @Column({ length: 50 })
-  name: string;
+    @PrimaryGeneratedColumn()
+    id: number;
 
-  @Column('text')
-  description: string;
+    @Column({length: 50})
+    name: string;
 
-  @Column()
-  price: string;
+    @Column({type: 'text'})
+    description: string;
 
-  @Column()
-  isActive: boolean;
+    @Column({type: "decimal"})
+    price: string;
+
+    @Column({type: "boolean", name: "is_active"})
+    isActive: boolean;
+
 }

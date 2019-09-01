@@ -2,17 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0c8baf11-953e-4b6d-a285-4cf901c4ef8f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../site/src/assets/i18n/en.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../site/src/assets/i18n/ru.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../site/src/assets/i18n/uz.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../site/src/assets/img/flags/en.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../site/src/assets/img/flags/ru.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../site/src/assets/img/flags/uz.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../admin/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../admin/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../admin/routes/editview.js" beforeDir="false" afterPath="$PROJECT_DIR$/../admin/routes/editview.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../admin/routes/listview.js" beforeDir="false" afterPath="$PROJECT_DIR$/../admin/routes/listview.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../admin/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/../admin/settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../admin/views/editview.html" beforeDir="false" afterPath="$PROJECT_DIR$/../admin/views/editview.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agents/agents.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/agents/agents.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/branches/branches.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/branches/branches.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/products/products.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/products/products.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../site/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../site/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../site/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../site/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../site/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../site/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../site/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../site/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../site/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../site/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../site/src/app/layout/dialogs/language/language-dialog.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../site/src/app/layout/dialogs/language/language-dialog.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../site/src/app/layout/dialogs/language/language-dialog.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../site/src/app/layout/dialogs/language/language-dialog.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../site/src/app/layout/heading/heading.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../site/src/app/layout/heading/heading.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../site/src/app/material2.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../site/src/app/material2.module.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,26 +44,30 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/environments" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="C:\tmp\alskom\alskom-dev\api\node_modules\prettier" />
-    <property name="ts.external.directory.path" value="C:\tmp\alskom\alskom-dev\api\node_modules\typescript\lib" />
+    <property name="ts.external.directory.path" value="C:\Elyor revisions\alskom\api\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Elyor revisions\alskom\api\src" />
+      <recent name="C:\tmp\alskom\alskom-dev\api\src\environments" />
+      <recent name="C:\tmp\alskom\alskom-dev\api\src\app" />
+      <recent name="C:\tmp\alskom\alskom-dev\api\src" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\tmp\alskom\alskom-dev\api\src" />
       <recent name="C:\tmp\alskom\alskom-dev\api\src\app\models" />
       <recent name="C:\tmp\alskom\alskom-dev\api\src\app" />
       <recent name="C:\tmp\alskom\alskom-dev\api" />
       <recent name="C:\tmp\alskom\alskom-dev\api\src\products" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\tmp\alskom\alskom-dev\api\src\environments" />
-      <recent name="C:\tmp\alskom\alskom-dev\api\src\app" />
-      <recent name="C:\tmp\alskom\alskom-dev\api\src" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -72,7 +82,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="npm.build">
+  <component name="RunManager" selected="npm.start">
     <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -153,6 +163,7 @@
       <workItem from="1567090399089" duration="342000" />
       <workItem from="1567095995316" duration="1100000" />
       <workItem from="1567098470611" duration="39000" />
+      <workItem from="1567264580071" duration="5546000" />
     </task>
     <servers />
   </component>
