@@ -1,10 +1,10 @@
 {
-    "agent": {
-        "slug": "Agent",
+    "vacancies": {
+        "slug": "Vacancies",
         "table": {
-            "name": "agent",
+            "name": "vacancies",
             "pk": "id",
-            "verbose": "Agent"
+            "verbose": "Vacancies"
         },
         "columns": [
             {
@@ -14,7 +14,7 @@
                     "text": true
                 },
                 "type": "integer",
-                "allowNull": true,
+                "allowNull": false,
                 "defaultValue": null,
                 "listview": {
                     "show": true
@@ -24,12 +24,12 @@
                 }
             },
             {
-                "name": "fullName",
-                "verbose": "Full Name",
+                "name": "title",
+                "verbose": "Title",
                 "control": {
                     "text": true
                 },
-                "type": "varchar(50)",
+                "type": "varchar(250)",
                 "allowNull": false,
                 "defaultValue": null,
                 "listview": {
@@ -40,16 +40,33 @@
                 }
             },
             {
-                "name": "phone",
-                "verbose": "Phone",
+                "name": "date",
+                "verbose": "Date",
                 "control": {
-                    "text": true
+                    "date": true
                 },
-                "type": "varchar(50)",
+                "type": "date",
                 "allowNull": false,
                 "defaultValue": null,
                 "listview": {
                     "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "description",
+                "verbose": "Description",
+                "control": {
+                    "textarea": true,
+                    "editor": "ck-full"
+                },
+                "type": "text",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": false
                 },
                 "editview": {
                     "show": true
@@ -67,12 +84,12 @@
             "readonly": false
         }
     },
-    "product": {
-        "slug": "Product",
+    "products": {
+        "slug": "Products",
         "table": {
-            "name": "product",
+            "name": "products",
             "pk": "id",
-            "verbose": "Product"
+            "verbose": "Products"
         },
         "columns": [
             {
@@ -97,7 +114,7 @@
                 "control": {
                     "text": true
                 },
-                "type": "varchar(50)",
+                "type": "varchar(250)",
                 "allowNull": false,
                 "defaultValue": null,
                 "listview": {
@@ -111,13 +128,14 @@
                 "name": "description",
                 "verbose": "Description",
                 "control": {
-                    "textarea": true
+                    "textarea": true,
+                    "editor": "ck-full"
                 },
                 "type": "text",
                 "allowNull": false,
                 "defaultValue": null,
                 "listview": {
-                    "show": true
+                    "show": false
                 },
                 "editview": {
                     "show": true
@@ -129,7 +147,7 @@
                 "control": {
                     "number": true
                 },
-                "type": "varchar(50)",
+                "type": "decimal",
                 "allowNull": false,
                 "defaultValue": null,
                 "listview": {
@@ -140,7 +158,7 @@
                 }
             },
             {
-                "name": "isActive",
+                "name": "is_active",
                 "verbose": "Is active?",
                 "control": {
                     "radio": true,
@@ -149,7 +167,7 @@
                         "No"
                     ]
                 },
-                "type": "char",
+                "type": "boolean",
                 "allowNull": false,
                 "defaultValue": null,
                 "listview": {
@@ -171,12 +189,12 @@
             "readonly": false
         }
     },
-    "branch": {
-        "slug": "Branch",
+    "branches": {
+        "slug": "Branches",
         "table": {
-            "name": "branch",
+            "name": "branches",
             "pk": "id",
-            "verbose": "Branch"
+            "verbose": "Branches"
         },
         "columns": [
             {
@@ -215,13 +233,13 @@
                 "name": "address",
                 "verbose": "Address",
                 "control": {
-                    "textarea": true
+                    "text": true
                 },
-                "type": "text",
+                "type": "varchar(250)",
                 "allowNull": false,
                 "defaultValue": null,
                 "listview": {
-                    "show": true
+                    "show": false
                 },
                 "editview": {
                     "show": true
@@ -233,7 +251,112 @@
                 "control": {
                     "text": true
                 },
-                "type": "varchar(50)",
+                "type": "varchar(25)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            }
+        ],
+        "mainview": {
+            "show": true
+        },
+        "listview": {
+            "order": {},
+            "page": 25
+        },
+        "editview": {
+            "readonly": false
+        }
+    },
+    "news": {
+        "slug": "News",
+        "table": {
+            "name": "news",
+            "pk": "id",
+            "verbose": "News"
+        },
+        "columns": [
+            {
+                "name": "id",
+                "verbose": "#",
+                "control": {
+                    "text": true
+                },
+                "type": "integer",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": false
+                }
+            },
+            {
+                "name": "title",
+                "verbose": "Title",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(250)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "date",
+                "verbose": "Date",
+                "control": {
+                    "date": true
+                },
+                "type": "date",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "description",
+                "verbose": "Description",
+                "control": {
+                    "textarea": true,
+                    "editor": "ck-full"
+                },
+                "type": "text",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": false
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "is_published",
+                "verbose": "Is published?",
+                "control": {
+                    "radio": true,
+                    "options": [
+                        "Yes",
+                        "No"
+                    ]
+                },
+                "type": "boolean",
                 "allowNull": false,
                 "defaultValue": null,
                 "listview": {
