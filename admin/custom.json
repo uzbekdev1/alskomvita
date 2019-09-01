@@ -1,1 +1,17 @@
-{}
+{
+	"admin": {
+		"public": {
+			"external": {
+				"js": [
+					"//cdnjs.cloudflare.com/ajax/libs/ckeditor/4.4.1/ckeditor.js"
+				]
+			},
+			"local": {
+				"path": "/upload",
+				"js": [
+					"/my-custom.js"
+				]
+			}
+		}
+	}
+}
