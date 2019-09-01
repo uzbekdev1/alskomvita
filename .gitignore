@@ -1,2 +1,5 @@
 /.idea
 /node_modules
+/deploy/Alskom.UI/Alskom.UI/obj
+/deploy/Alskom.UI/Alskom.UI/bin
+/deploy/.vs
