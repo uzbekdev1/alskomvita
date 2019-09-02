@@ -21,6 +21,14 @@ import {AppService} from './shared/services/app.service';
 import {RouterModule} from '@angular/router';
 import {HomeComponent} from './home/home.component';
 
+export function localeIdFactory(localeService: LocalizeService) {
+  return localeService.getLocale();
+}
+
+export function translateLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http, './assets/i18n/', '.json');
+}
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,7 +48,7 @@ import {HomeComponent} from './home/home.component';
     HttpClientModule,
     FormsModule,
     RouterModule.forRoot([
-      {path: '', redirectTo: 'home', pathMatch: 'full'},
+      {path: '', redirectTo: '/home', pathMatch: 'full'},
       {path: 'home', component: HomeComponent},
       {path: 'about', component: AboutComponent},
       {path: 'branches', component: BranchesComponent},
@@ -49,6 +57,7 @@ import {HomeComponent} from './home/home.component';
       {path: 'news', component: NewsComponent},
       {path: 'products', component: ProductsComponent},
       {path: 'vacancies', component: VacanciesComponent},
+      {path: '**', redirectTo: '/home'}
     ]),
     BrowserAnimationsModule,
     FormsModule,
@@ -57,16 +66,18 @@ import {HomeComponent} from './home/home.component';
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
-        useFactory: (http: HttpClient) => new TranslateHttpLoader(http, './assets/i18n/', '.json'),
+        useFactory: translateLoaderFactory,
         deps: [HttpClient]
       }
     }),
   ],
-  providers: [LocalizeService, AppService,
+  providers: [
+    LocalizeService,
+    AppService,
     {
       provide: LOCALE_ID,
-      deps: [LocalizeService],
-      useFactory: (sessionService) => sessionService.getLocale()
+      useFactory: localeIdFactory,
+      deps: [LocalizeService]
     }],
   entryComponents: [],
   bootstrap: [AppComponent]

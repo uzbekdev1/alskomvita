@@ -11,41 +11,49 @@ import {registerLocaleData} from '@angular/common';
 @Injectable()
 export class LocalizeService {
 
-    keyLang = 'lang';
+  keyLang = 'lang';
+  langPattern = new RegExp(/en|ru|uz/);
 
-    constructor(private translate: TranslateService) {
+  constructor(private translate: TranslateService) {
+    this.translate.addLangs(['en', 'ru', 'uz']);
 
-        this.translate.setDefaultLang('ru');
+    const browserLang = this.translate.getBrowserLang();
+    const defaultLang = browserLang.match(this.langPattern) ? browserLang : 'ru';
+
+    this.translate.setDefaultLang(defaultLang);
+  }
+
+  getList() {
+    return [
+      {value: 'ru', text: 'Русский'},
+      {value: 'uz', text: 'O\'zbekcha'},
+      {value: 'en', text: 'English'},
+    ];
+  }
+
+  getLang() {
+
+    const currentLang = localStorage.getItem(this.keyLang);
+
+    return currentLang.match(this.langPattern) ? currentLang : this.translate.getDefaultLang();
+  }
+
+  getLocale() {
+    return this.getLang().toLowerCase() + '-' + this.getLang().toUpperCase();
+  }
+
+  changeLang(lang: string) {
+    localStorage.setItem(this.keyLang, lang);
+
+    if (lang === 'ru') {
+      registerLocaleData(localeRu, 'ru-RU', localeRuExtra);
+    } else if (lang === 'uz') {
+      registerLocaleData(localeUz, 'uz-UZ', localeUzExtra);
+    } else {
+      registerLocaleData(localeEn, 'en-EN', localeEnExtra);
     }
 
-    getList() {
-        return [
-            {value: 'ru', text: 'Русский'},
-            {value: 'uz', text: 'O\'zbekcha'},
-            {value: 'en', text: 'English'},
-        ];
-    }
-
-    getLang() {
-        return localStorage.getItem(this.keyLang) || this.translate.getDefaultLang();
-    }
-
-    getLocale() {
-        return this.getLang().toLowerCase() + '-' + this.getLang().toUpperCase();
-    }
-
-    changeLang(lang: string) {
-        localStorage.setItem(this.keyLang, lang);
-
-        if (lang === 'ru') {
-            registerLocaleData(localeRu, 'ru-RU', localeRuExtra);
-        } else if (lang === 'uz') {
-            registerLocaleData(localeUz, 'uz-UZ', localeUzExtra);
-        } else {
-            registerLocaleData(localeEn, 'en-EN', localeEnExtra);
-        }
-
-        this.translate.use(lang);
-    }
+    this.translate.use(lang);
+  }
 
 }

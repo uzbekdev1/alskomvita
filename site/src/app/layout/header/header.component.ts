@@ -7,19 +7,16 @@ import {LocalizeService} from '../../shared/services/localize.service';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-  currentLang: string;
-  langs: { text: string, value: string }[];
+  currentLang: { text: string, value: string };
+  langList: { text: string, value: string }[];
 
   constructor(private localize: LocalizeService) {
 
-    this.currentLang = this.localize.getLang();
-    this.langs = this.localize.getList();
-
-    this.localize.changeLang(this.currentLang);
+    this.langList = this.localize.getList().filter(a => a.value != this.localize.getLang());
+    this.currentLang = this.localize.getList().find(a => a.value == this.localize.getLang());
   }
 
   ngOnInit() {
-
   }
 
   changeLang(lang: string) {
