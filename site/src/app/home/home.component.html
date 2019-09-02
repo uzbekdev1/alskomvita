@@ -1,19 +1,16 @@
 <section id="hero" class="wow fadeIn">
   <div class="hero-container">
-    <h1>
-      Первая компания которая делает <br> страхования жизни
+    <h1 [innerHTML]="'home.heroTitle'|translate">
     </h1>
     <Br>
-    <h2>
-      Основной целью создания новой страховой <br> компании
-      указываются расширение и развитие <br> бизнеса
-      путем предоставления клиентам <br> комплексных страховых услуг.
+    <h2 [innerHTML]="'home.heroContent'|translate">
+
     </h2>
-    <a href="#get-started" class="btn-get-started scrollto"> Страховой случай </a>
+    <a routerLink="/about" class="btn-get-started scrollto"> {{"home.insuranceOffer"|translate}} </a>
     <div class="btns">
-      <a routerLink="/products"><i class="fa fa-list fa-3x"></i> Продукты</a>
-      <a routerLink="/vacancies"><i class="fa fa-bookmark fa-3x"></i> Вакансии</a>
-      <a routerLink="/contact"><i class="fa fa-phone fa-3x"></i> Контакты</a>
+      <a routerLink="/products"><i class="fa fa-list fa-3x"></i> {{"common.products"|translate}}</a>
+      <a routerLink="/vacancies"><i class="fa fa-bookmark fa-3x"></i> {{"common.vacancies"|translate}}</a>
+      <a routerLink="/contact"><i class="fa fa-phone fa-3x"></i> {{"common.contact"|translate}}</a>
     </div>
   </div>
-</section><!-- #hero -->
+</section>

@@ -20,6 +20,7 @@ export class HeaderComponent implements OnInit {
   }
 
   changeLang(lang: string) {
+
     this.localize.changeLang(lang);
 
     location.reload(true);
