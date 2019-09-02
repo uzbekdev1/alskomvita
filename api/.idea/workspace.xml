@@ -1,75 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0c8baf11-953e-4b6d-a285-4cf901c4ef8f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leaderships/leadership.entity.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leaderships/leaderships.controller.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leaderships/leaderships.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leaderships/leaderships.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/vacancies/vacancy.entity.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../site/src/app/layout/dialogs/entities/leadership/details.dialog.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../site/src/app/layout/dialogs/entities/leadership/details.dialog.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../site/src/app/layout/dialogs/entities/news/details.dialog.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../site/src/app/layout/dialogs/entities/news/details.dialog.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../site/src/app/layout/dialogs/entities/product/details.dialog.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../site/src/app/layout/dialogs/entities/product/details.dialog.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../site/src/app/layout/dialogs/language/language.dialog.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../site/src/app/shared/entities/branch.entity.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../site/src/app/shared/entities/leadership.entity.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../site/src/app/shared/entities/product.entity.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../site/src/app/shared/entities/vacancy.entity.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../site/src/app/shared/services/app.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../site/src/app/shared/services/localize.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../site/src/assets/img/noimage.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../admin/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../admin/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../admin/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/../admin/config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../admin/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/../admin/settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/branches/branch.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/branches/branch.entity.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/news/news.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/news/news.entity.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/products/product.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/products/product.entity.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vacancies/cavancy.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../site/src/app/shared/entities/news.entity.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vacancies/vacancies.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/vacancies/vacancies.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vacancies/vacancies.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/vacancies/vacancies.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vacancies/vacancies.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/vacancies/vacancies.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../site/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../site/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../site/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../site/src/app/app.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../site/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../site/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../site/src/app/branches/branches.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../site/src/app/branches/branches.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../site/src/app/branches/branches.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../site/src/app/branches/branches.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../site/src/app/contact/contact.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../site/src/app/contact/contact.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../site/src/app/contact/contact.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../site/src/app/contact/contact.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../site/src/app/layout/dialogs/language/language-dialog.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../site/src/app/layout/dialogs/language/language.dialog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../site/src/app/layout/dialogs/language/language-dialog.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../site/src/app/layout/dialogs/language/language.dialog.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../site/src/app/layout/dialogs/language/language-dialog.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../site/src/app/layout/footer/footer.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../site/src/app/layout/footer/footer.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../site/src/app/layout/header/header.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../site/src/app/layout/header/header.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../site/src/app/layout/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../site/src/app/layout/header/header.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../site/src/app/leaderships/leaderships.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../site/src/app/leaderships/leaderships.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../site/src/app/leaderships/leaderships.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../site/src/app/leaderships/leaderships.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../site/src/app/news/news.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../site/src/app/news/news.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../site/src/app/news/news.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../site/src/app/news/news.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../site/src/app/products/products.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../site/src/app/products/products.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../site/src/app/products/products.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../site/src/app/products/products.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../site/src/app/resources/resources.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../site/src/app/resources/resources.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../site/src/app/resources/resources.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../site/src/app/services/services.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../site/src/app/services/services.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../site/src/app/services/services.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../site/src/app/shared/models/contact.form.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../site/src/app/shared/models/contact.form.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../site/src/app/shared/models/spect.form.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../site/src/app/vacancies/vacancies.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../site/src/app/vacancies/vacancies.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../site/src/app/vacancies/vacancies.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../site/src/app/vacancies/vacancies.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../site/src/assets/styles/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../site/src/assets/styles/styles.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../site/src/environments/environment.prod.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../site/src/environments/environment.prod.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../site/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../site/src/environments/environment.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../site/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../site/src/main.ts" afterDir="false" />
-    </list>
+    <list default="true" id="0c8baf11-953e-4b6d-a285-4cf901c4ef8f" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
