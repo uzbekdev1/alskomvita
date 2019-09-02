@@ -7,45 +7,53 @@ import {LeadershipEntity} from '../entities/leadership.entity';
 import {ProductEntity} from '../entities/product.entity';
 import {VacancyEntity} from '../entities/vacancy.entity';
 import {BranchEntity} from '../entities/branch.entity';
+import {LanguageEntity} from '../entities/language.entity';
 
 @Injectable()
 export class AppService {
 
-    private baseUrl: string = environment.apiUrl + '/api/v1';
+  private readonly baseUrl: string = environment.apiUrl + '/api/v1';
+  private readonly langId: number;
 
-    constructor(private http: HttpClient) {
-    }
+  constructor(private http: HttpClient) {
+    this.langId = +localStorage.getItem('langId') || 1;
+  }
 
-    getBranches(): Observable<BranchEntity[]> {
-        return this.http.get<BranchEntity[]>(this.baseUrl + '/branches');
-    }
+  getBranches(): Observable<BranchEntity[]> {
+    return this.http.get<BranchEntity[]>(this.baseUrl + '/branches/' + this.langId);
+  }
 
-    getLeaderships(): Observable<LeadershipEntity[]> {
-        return this.http.get<LeadershipEntity[]>(this.baseUrl + '/leaderships');
-    }
+  getLeaderships(): Observable<LeadershipEntity[]> {
+    return this.http.get<LeadershipEntity[]>(this.baseUrl + '/leaderships/' + this.langId);
+  }
 
-    getLeadership(id: number): Observable<LeadershipEntity> {
-        return this.http.get<LeadershipEntity>(this.baseUrl + '/leaderships/' + id);
-    }
+  getLanguage(lang: string): Observable<LanguageEntity> {
 
-    getNews(): Observable<NewsEntity[]> {
-        return this.http.get<NewsEntity[]>(this.baseUrl + '/news');
-    }
+    return this.http.get<LanguageEntity>(this.baseUrl + '/languages/' + lang);
+  }
 
-    getNew(id: number): Observable<NewsEntity> {
-        return this.http.get<NewsEntity>(this.baseUrl + '/news/' + id);
-    }
+  getLeadership(id: number): Observable<LeadershipEntity> {
+    return this.http.get<LeadershipEntity>(this.baseUrl + '/leaderships/' + id);
+  }
 
-    getProducts(): Observable<ProductEntity[]> {
-        return this.http.get<ProductEntity[]>(this.baseUrl + '/products');
-    }
+  getNews(): Observable<NewsEntity[]> {
+    return this.http.get<NewsEntity[]>(this.baseUrl + '/news/' + this.langId);
+  }
 
-    getProduct(id: number): Observable<ProductEntity> {
-        return this.http.get<ProductEntity>(this.baseUrl + '/products/' + id);
-    }
+  getNew(id: number): Observable<NewsEntity> {
+    return this.http.get<NewsEntity>(this.baseUrl + '/news/' + id);
+  }
 
-    getVacancies(): Observable<VacancyEntity[]> {
-        return this.http.get<VacancyEntity[]>(this.baseUrl + '/vacancies');
-    }
+  getProducts(): Observable<ProductEntity[]> {
+    return this.http.get<ProductEntity[]>(this.baseUrl + '/products/' + this.langId);
+  }
+
+  getProduct(id: number): Observable<ProductEntity> {
+    return this.http.get<ProductEntity>(this.baseUrl + '/products/' + id);
+  }
+
+  getVacancies(): Observable<VacancyEntity[]> {
+    return this.http.get<VacancyEntity[]>(this.baseUrl + '/vacancies/' + this.langId);
+  }
 
 }

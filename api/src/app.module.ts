@@ -5,10 +5,12 @@ import { ProductsModule } from "./products/products.module";
 import { BranchesModule } from "./branches/branches.module";
 import { NewsModule } from "./news/news.module";
 import { LeadershipsModule } from "./leaderships/leaderships.module";
+import { LanguagesModule } from "./languages/languages.module";
 
 @Module({
   imports: [
     TypeOrmModule.forRoot(),
+    LanguagesModule,
     ProductsModule,
     VacanciesModule,
     BranchesModule,

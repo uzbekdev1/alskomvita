@@ -40,12 +40,17 @@
           <div id="errormessage"></div>
           <form (ngSubmit)="onSubmit()" class="contactForm">
             <div class="form-group">
-              <input type="text" name="name" class="form-control" id="name" placeholder="Ваше имя"
+              <input type="text" name="name" class="form-control" id="name" placeholder="Ф.И.О"
                      data-rule="minlen:4" data-msg="Please enter at least 4 chars"/>
               <div class="validation"></div>
             </div>
             <div class="form-group">
-              <input type="email" class="form-control" name="email" id="email" placeholder="Ваш E-mail"
+              <input type="text" name="phone" class="form-control" id="phone" placeholder="Телефон"
+                     data-rule="minlen:4" data-msg="Please enter at least 4 chars"/>
+              <div class="validation"></div>
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" name="email" id="email" placeholder="E-mail"
                      data-rule="email" data-msg="Please enter a valid email"/>
               <div class="validation"></div>
             </div>

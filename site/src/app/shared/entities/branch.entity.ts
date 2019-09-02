@@ -1,7 +1,8 @@
 export class BranchEntity {
 
-    id: number;
-    name: string;
-    contact: string;
-    image: string;
+  id: number;
+  name: string;
+  contact: string;
+  image: string;
 }
+

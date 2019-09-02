@@ -11,19 +11,13 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   const basePath = "/api/v1";
 
-  // Enable CORS
-  app.enableCors();
-
-  // Add prefix
-  app.setGlobalPrefix(basePath);
-  app.useGlobalPipes(new ValidationPipe());
-
   // Swagger Configuration
   const options = new DocumentBuilder()
     .setTitle("Alskom-VITA API")
     .setBasePath(basePath)
     .setDescription("The Alskom-VITA API description")
     .setVersion("1.0")
+    .addTag("languages", "Languages")
     .addTag("vacancies", "Vacancies")
     .addTag("branches", "Branches")
     .addTag("products", "Products")
@@ -31,6 +25,13 @@ async function bootstrap() {
     .addTag("leaderships", "Leaderships")
     // .addBearerAuth('Authorization', 'header')
     .build();
+
+  // Enable CORS
+  app.enableCors();
+  // Add prefix
+  app.setGlobalPrefix(basePath);
+
+  app.useGlobalPipes(new ValidationPipe());
   const document = SwaggerModule.createDocument(app, options);
   SwaggerModule.setup("/", app, document);
 

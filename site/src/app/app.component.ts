@@ -10,7 +10,7 @@ export class AppComponent implements OnInit, OnDestroy {
 
   constructor(private localize: LocalizeService) {
 
-    this.localize.changeLang(this.localize.getLang());
+    this.localize.changeLang(this.localize.getLangCode());
   }
 
   ngOnDestroy(): void {

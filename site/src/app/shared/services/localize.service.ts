@@ -7,18 +7,20 @@ import localeRuExtra from '@angular/common/locales/extra/ru';
 import localeUzExtra from '@angular/common/locales/extra/uz';
 import localeEnExtra from '@angular/common/locales/extra/en';
 import {registerLocaleData} from '@angular/common';
+import {AppService} from './app.service';
 
 @Injectable()
 export class LocalizeService {
 
-  keyLang = 'lang';
+  keyLangCode = 'langCode';
   langPattern = new RegExp(/en|ru|uz/);
 
-  constructor(private translate: TranslateService) {
+  constructor(private translate: TranslateService,
+              private app: AppService) {
     this.translate.addLangs(['en', 'ru', 'uz']);
 
     const browserLang = this.translate.getBrowserLang();
-    const defaultLang = browserLang.match(this.langPattern) ? browserLang : 'ru';
+    const defaultLang = browserLang && browserLang.match(this.langPattern) ? browserLang : 'ru';
 
     this.translate.setDefaultLang(defaultLang);
   }
@@ -31,19 +33,19 @@ export class LocalizeService {
     ];
   }
 
-  getLang() {
+  getLangCode() {
 
-    const currentLang = localStorage.getItem(this.keyLang);
+    const currentLang = localStorage.getItem(this.keyLangCode);
 
-    return currentLang.match(this.langPattern) ? currentLang : this.translate.getDefaultLang();
+    return currentLang && currentLang.match(this.langPattern) ? currentLang : this.translate.getDefaultLang();
   }
 
   getLocale() {
-    return this.getLang().toLowerCase() + '-' + this.getLang().toUpperCase();
+    return this.getLangCode().toLowerCase() + '-' + this.getLangCode().toUpperCase();
   }
 
   changeLang(lang: string) {
-    localStorage.setItem(this.keyLang, lang);
+    localStorage.setItem(this.keyLangCode, lang);
 
     if (lang === 'ru') {
       registerLocaleData(localeRu, 'ru-RU', localeRuExtra);
@@ -52,6 +54,10 @@ export class LocalizeService {
     } else {
       registerLocaleData(localeEn, 'en-EN', localeEnExtra);
     }
+
+    this.app.getLanguage(lang).subscribe(data => {
+      localStorage.setItem('langId', data.id + '');
+    });
 
     this.translate.use(lang);
   }

@@ -9,13 +9,16 @@ export class VacancyEntity {
   @Column({ length: 120 })
   position: string;
 
-  @Column({ length: 120 })
+  @Column({ length: 120, nullable: true })
   department: string;
 
   @Column({ type: "text" })
   requirements: string;
 
-  @Column({ length: 250, name: "place_of_work" })
-  placeOfWork: string;
+  @Column({ name: "branch_id", nullable: true })
+  branchId: number;
+
+  @Column({ name: "language_id", nullable: true })
+  languageId: number;
 
 }

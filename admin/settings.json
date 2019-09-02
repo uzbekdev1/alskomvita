@@ -73,16 +73,46 @@
                 }
             },
             {
-                "name": "place_of_work",
-                "verbose": "Place of work",
+                "name": "branch_id",
+                "verbose": "Branch",
                 "control": {
-                    "textarea": true
+                    "select": true
                 },
-                "type": "varchar(250)",
-                "allowNull": false,
+                "oneToMany": {
+                    "table": "branches",
+                    "pk": "id",
+                    "columns": [
+                        "name"
+                    ]
+                },
+                "type": "integer",
+                "allowNull": true,
                 "defaultValue": null,
                 "listview": {
+                    "show": false
+                },
+                "editview": {
                     "show": true
+                }
+            },
+            {
+                "name": "language_id",
+                "verbose": "Language",
+                "control": {
+                    "select": true
+                },
+                "oneToMany": {
+                    "table": "languages",
+                    "pk": "id",
+                    "columns": [
+                        "name"
+                    ]
+                },
+                "type": "integer",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": false
                 },
                 "editview": {
                     "show": true
@@ -192,6 +222,29 @@
                 "editview": {
                     "show": true
                 }
+            },
+            {
+                "name": "language_id",
+                "verbose": "Language",
+                "control": {
+                    "select": true
+                },
+                "oneToMany": {
+                    "table": "languages",
+                    "pk": "id",
+                    "columns": [
+                        "name"
+                    ]
+                },
+                "type": "integer",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": false
+                },
+                "editview": {
+                    "show": true
+                }
             }
         ],
         "mainview": {
@@ -270,6 +323,29 @@
                 },
                 "type": "text",
                 "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": false
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "language_id",
+                "verbose": "Language",
+                "control": {
+                    "select": true
+                },
+                "oneToMany": {
+                    "table": "languages",
+                    "pk": "id",
+                    "columns": [
+                        "name"
+                    ]
+                },
+                "type": "integer",
+                "allowNull": true,
                 "defaultValue": null,
                 "listview": {
                     "show": false
@@ -394,6 +470,29 @@
                 "defaultValue": null,
                 "listview": {
                     "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "language_id",
+                "verbose": "Language",
+                "control": {
+                    "select": true
+                },
+                "oneToMany": {
+                    "table": "languages",
+                    "pk": "id",
+                    "columns": [
+                        "name"
+                    ]
+                },
+                "type": "integer",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": false
                 },
                 "editview": {
                     "show": true
@@ -559,6 +658,113 @@
                 "defaultValue": null,
                 "listview": {
                     "show": false
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "language_id",
+                "verbose": "Language",
+                "control": {
+                    "select": true
+                },
+                "oneToMany": {
+                    "table": "languages",
+                    "pk": "id",
+                    "columns": [
+                        "name"
+                    ]
+                },
+                "type": "integer",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": false
+                },
+                "editview": {
+                    "show": true
+                }
+            }
+        ],
+        "mainview": {
+            "show": true
+        },
+        "listview": {
+            "order": {},
+            "page": 25
+        },
+        "editview": {
+            "readonly": false
+        }
+    },
+    "languages": {
+        "slug": "Languages",
+        "table": {
+            "name": "languages",
+            "pk": "id",
+            "verbose": "Languages"
+        },
+        "columns": [
+            {
+                "name": "id",
+                "verbose": "#",
+                "control": {
+                    "text": true
+                },
+                "type": "integer",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": false
+                },
+                "editview": {
+                    "show": false
+                }
+            },
+            {
+                "name": "name",
+                "verbose": "Name",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(50)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "code",
+                "verbose": "Code",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(50)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "locale",
+                "verbose": "Locale",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(50)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
                 },
                 "editview": {
                     "show": true
