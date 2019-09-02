@@ -1,5 +1,5 @@
 import {Injectable} from '@nestjs/common';
-import {Vacancy} from './cavancy.entity';
+import {VacancyEntity} from './vacancy.entity';
 import {from, Observable} from 'rxjs';
 import {InjectRepository} from '@nestjs/typeorm';
 import {Repository} from 'typeorm';
@@ -8,11 +8,11 @@ import {Repository} from 'typeorm';
 export class VacanciesService {
 
     constructor(
-        @InjectRepository(Vacancy)
-        private readonly vacancyRepository: Repository<Vacancy>) {
+        @InjectRepository(VacancyEntity)
+        private readonly vacancyRepository: Repository<VacancyEntity>) {
     }
 
-    getAll(): Observable<Vacancy[]> {
+    getAll(): Observable<VacancyEntity[]> {
         return from(this.vacancyRepository.find());
     }
 

@@ -2,9 +2,9 @@ import {MediaMatcher} from '@angular/cdk/layout';
 import {ChangeDetectorRef, Component, OnDestroy, Inject, OnInit} from '@angular/core';
 import {SE} from './shared/directives/scroll.directive';
 import {MatDialog} from '@angular/material';
-import {LanguageDialogComponent} from './layout/dialogs/language/language-dialog.component';
+import {LanguageDialog} from './layout/dialogs/language/language.dialog';
 import {DOCUMENT} from '@angular/common';
-import {TranslateService} from '@ngx-translate/core';
+import {LocalizeService} from './shared/services/localize.service';
 
 @Component({
     selector: 'app-root',
@@ -26,19 +26,18 @@ export class AppComponent implements OnInit, OnDestroy {
                 changeDetectorRef: ChangeDetectorRef,
                 media: MediaMatcher,
                 public dialog: MatDialog,
-                private translate: TranslateService
+                private localize: LocalizeService
     ) {
         this.mobileQuery = media.matchMedia('(max-width: 600px)');
         this._mobileQueryListener = () => changeDetectorRef.detectChanges();
         this.mobileQuery.addListener(this._mobileQueryListener);
 
-        this.currentLang = localStorage.getItem('lang') || 'ru';
+        this.currentLang = this.localize.getLang();
 
-        this.translate.setDefaultLang(this.currentLang);
-        this.translate.use(this.currentLang)
+        this.localize.changeLang(this.currentLang);
     }
 
-    public detectScroll(event: SE) {
+    detectScroll(event: SE) {
 
         if (event.header) {
             this.isActive = false;
@@ -55,7 +54,7 @@ export class AppComponent implements OnInit, OnDestroy {
     }
 
     openDialog(): void {
-        const result = this.dialog.open(LanguageDialogComponent, {
+        const result = this.dialog.open(LanguageDialog, {
             width: '250px'
         });
         result.afterClosed().subscribe(params => {

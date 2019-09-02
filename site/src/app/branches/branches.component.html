@@ -9,274 +9,34 @@
 
 
         <div fxLayout="row" fxLayout.lt-md="column" fxLayoutWrap="nowrap" fxLayoutGap="30px">
-            <div fxFlex="50">
+            <div fxFlex="100">
                 <div fxLayout="column" fxLayoutAlign="center center" [ngStyle.xs]="{'padding': '0 60px'}">
 
                     <mat-accordion class="example-headers-align">
 
-                        <mat-expansion-panel hideToggle>
+                        <mat-expansion-panel hideToggle expanded="true" *ngFor="let item of items">
                             <mat-expansion-panel-header>
                                 <mat-panel-title>
-                                    Андижанская обл
+                                    {{item.name}}
                                 </mat-panel-title>
                                 <mat-panel-description>
-                                    +998 71 235 9309
-                                    <mat-icon>map</mat-icon>
+                                    <span>
+                                        &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;
+                                    </span>
+                                    <mat-icon>map
+                                    </mat-icon>
                                 </mat-panel-description>
                             </mat-expansion-panel-header>
                             <p>
-                                Адрес: <br>100084, Узбекистан, Ташкент, ул. Богишамол, 7а
+                                <img [src]="baseUrl+item.image"/>
                             </p>
-                            <p>
-                                Расположение:<br>
-                                <iframe src="https://yandex.com/map-widget/v1/-/CGG6ETiA" width="600" height="400"
-                                        frameborder="0"
-                                        allowfullscreen="true"></iframe>
+                            <p [innerHTML]="item.contact">
                             </p>
                         </mat-expansion-panel>
 
-                        <mat-expansion-panel hideToggle>
-                            <mat-expansion-panel-header>
-                                <mat-panel-title>
-                                    Бухарская обл.
-                                </mat-panel-title>
-                                <mat-panel-description>
-                                    +998 71 235 9309
-                                    <mat-icon>map</mat-icon>
-                                </mat-panel-description>
-                            </mat-expansion-panel-header>
-                            <p>
-                                Адрес: <br>100084, Узбекистан, Ташкент, ул. Богишамол, 7а
-                            </p>
-                            <p>
-                                Место нахождения:<br>
-                                <iframe src="https://yandex.com/map-widget/v1/-/CGG6ETiA" width="600" height="400"
-                                        frameborder="0"
-                                        allowfullscreen="true"></iframe>
-                            </p>
-                        </mat-expansion-panel>
-
-                        <mat-expansion-panel hideToggle>
-                            <mat-expansion-panel-header>
-                                <mat-panel-title>
-                                    Джизакская обл.
-                                </mat-panel-title>
-                                <mat-panel-description>
-                                    +998 71 235 9309
-                                    <mat-icon>map</mat-icon>
-                                </mat-panel-description>
-                            </mat-expansion-panel-header>
-                            <p>
-                                Адрес:<br> 100084, Узбекистан, Ташкент, ул. Богишамол, 7а
-                            </p>
-                            <p>
-                                Расположение:<br>
-                                <iframe src="https://yandex.com/map-widget/v1/-/CGG6ETiA" width="600" height="400"
-                                        frameborder="0"
-                                        allowfullscreen="true"></iframe>
-                            </p>
-                        </mat-expansion-panel>
-
-                        <mat-expansion-panel hideToggle>
-                            <mat-expansion-panel-header>
-                                <mat-panel-title>
-                                    Джизакская обл.
-                                </mat-panel-title>
-                                <mat-panel-description>
-                                    +998 71 235 9309
-                                    <mat-icon>map</mat-icon>
-                                </mat-panel-description>
-                            </mat-expansion-panel-header>
-                            <p>
-                                Адрес: <br>100084, Узбекистан, Ташкент, ул. Богишамол, 7а
-                            </p>
-                            <p>
-                                Расположение:<br>
-                                <iframe src="https://yandex.com/map-widget/v1/-/CGG6ETiA" width="600" height="400"
-                                        frameborder="0"
-                                        allowfullscreen="true"></iframe>
-                            </p>
-                        </mat-expansion-panel>
-
-                        <mat-expansion-panel hideToggle>
-                            <mat-expansion-panel-header>
-                                <mat-panel-title>
-                                    Кашкадарьинская обл.
-                                </mat-panel-title>
-                                <mat-panel-description>
-                                    +998 71 235 9309
-                                    <mat-icon>map</mat-icon>
-                                </mat-panel-description>
-                            </mat-expansion-panel-header>
-                            <p>
-                                Адрес: <br>100084, Узбекистан, Ташкент, ул. Богишамол, 7а
-                            </p>
-                            <p>
-                                Расположение:<br>
-                                <iframe src="https://yandex.com/map-widget/v1/-/CGG6ETiA" width="600" height="400"
-                                        frameborder="0"
-                                        allowfullscreen="true"></iframe>
-                            </p>
-                        </mat-expansion-panel>
-
-                        <mat-expansion-panel hideToggle>
-                            <mat-expansion-panel-header>
-                                <mat-panel-title>
-                                    Кашкадарьинская обл.
-                                </mat-panel-title>
-                                <mat-panel-description>
-                                    +998 71 235 9309
-                                    <mat-icon>map</mat-icon>
-                                </mat-panel-description>
-                            </mat-expansion-panel-header>
-                            <p>
-                                Адрес: <br>100084, Узбекистан, Ташкент, ул. Богишамол, 7а
-                            </p>
-                            <p>
-                                Расположение:<br>
-                                <iframe src="https://yandex.com/map-widget/v1/-/CGG6ETiA" width="600" height="400"
-                                        frameborder="0"
-                                        allowfullscreen="true"></iframe>
-                            </p>
-                        </mat-expansion-panel>
 
                     </mat-accordion>
 
-                </div>
-            </div>
-
-            <div fxFlex="50">
-                <div fxLayout="column" fxLayoutAlign="center center" [ngStyle.lt-md]="{'padding': '0 60px'}">
-
-                    <mat-accordion class="example-headers-align">
-
-                        <mat-expansion-panel hideToggle>
-                            <mat-expansion-panel-header>
-                                <mat-panel-title>
-                                    Самаркандская обл.
-                                </mat-panel-title>
-                                <mat-panel-description>
-                                    +998 71 235 9309
-                                    <mat-icon>map</mat-icon>
-                                </mat-panel-description>
-                            </mat-expansion-panel-header>
-                            <p>
-                                Адрес:<br> 100084, Узбекистан, Ташкент, ул. Богишамол, 7а
-                            </p>
-                            <p>
-                                Расположение:<br>
-                                <iframe src="https://yandex.com/map-widget/v1/-/CGG6ETiA" width="600" height="400"
-                                        frameborder="0"
-                                        allowfullscreen="true"></iframe>
-                            </p>
-                        </mat-expansion-panel>
-
-                        <mat-expansion-panel hideToggle>
-                            <mat-expansion-panel-header>
-                                <mat-panel-title>
-                                    Сурхандаринская обл.
-                                </mat-panel-title>
-                                <mat-panel-description>
-                                    +998 71 235 9309
-                                    <mat-icon>map</mat-icon>
-                                </mat-panel-description>
-                            </mat-expansion-panel-header>
-                            <p>
-                                Адрес: <br>100084, Узбекистан, Ташкент, ул. Богишамол, 7а
-                            </p>
-                            <p>
-                                Расположение:<br>
-                                <iframe src="https://yandex.com/map-widget/v1/-/CGG6ETiA" width="600" height="400"
-                                        frameborder="0"
-                                        allowfullscreen="true"></iframe>
-                            </p>
-                        </mat-expansion-panel>
-
-                        <mat-expansion-panel hideToggle>
-                            <mat-expansion-panel-header>
-                                <mat-panel-title>
-                                    Сырдарьинская обл.
-                                </mat-panel-title>
-                                <mat-panel-description>
-                                    +998 71 235 9309
-                                    <mat-icon>map</mat-icon>
-                                </mat-panel-description>
-                            </mat-expansion-panel-header>
-                            <p>
-                                Адрес: <br>100084, Узбекистан, Ташкент, ул. Богишамол, 7а
-                            </p>
-                            <p>
-                                Расположение:<br>
-                                <iframe src="https://yandex.com/map-widget/v1/-/CGG6ETiA" width="600" height="400"
-                                        frameborder="0"
-                                        allowfullscreen="true"></iframe>
-                            </p>
-                        </mat-expansion-panel>
-
-                        <mat-expansion-panel hideToggle>
-                            <mat-expansion-panel-header>
-                                <mat-panel-title>
-                                    Ташкентская обл.
-                                </mat-panel-title>
-                                <mat-panel-description>
-                                    +998 71 235 9309
-                                    <mat-icon>map</mat-icon>
-                                </mat-panel-description>
-                            </mat-expansion-panel-header>
-                            <p>
-                                Адрес: <br>100084, Узбекистан, Ташкент, ул. Богишамол, 7а
-                            </p>
-                            <p>
-                                Расположение:<br>
-                                <iframe src="https://yandex.com/map-widget/v1/-/CGG6ETiA" width="600" height="400"
-                                        frameborder="0"
-                                        allowfullscreen="true"></iframe>
-                            </p>
-                        </mat-expansion-panel>
-
-                        <mat-expansion-panel hideToggle>
-                            <mat-expansion-panel-header>
-                                <mat-panel-title>
-                                    Ферганская обл.
-                                </mat-panel-title>
-                                <mat-panel-description>
-                                    +998 71 235 9309
-                                    <mat-icon>map</mat-icon>
-                                </mat-panel-description>
-                            </mat-expansion-panel-header>
-                            <p>
-                                Адрес:<br> 100084, Узбекистан, Ташкент, ул. Богишамол, 7а
-                            </p>
-                            <p>
-                                Расположение:<br>
-                                <iframe src="https://yandex.com/map-widget/v1/-/CGG6ETiA" width="600" height="400"
-                                        frameborder="0"
-                                        allowfullscreen="true"></iframe>
-                            </p>
-                        </mat-expansion-panel>
-
-                        <mat-expansion-panel hideToggle>
-                            <mat-expansion-panel-header>
-                                <mat-panel-title>
-                                    Хорезмская обл.
-                                </mat-panel-title>
-                                <mat-panel-description>
-                                    +998 71 235 9309
-                                    <mat-icon>map</mat-icon>
-                                </mat-panel-description>
-                            </mat-expansion-panel-header>
-                            <p>
-                                Адрес: <br>100084, Узбекистан, Ташкент, ул. Богишамол, 7а
-                            </p>
-                            <p>
-                                Расположение:<br>
-                                <iframe src="https://yandex.com/map-widget/v1/-/CGG6ETiA" width="600" height="400"
-                                        frameborder="0"
-                                        allowfullscreen="true"></iframe>
-                            </p>
-                        </mat-expansion-panel>
-
-                    </mat-accordion>
                 </div>
             </div>
 

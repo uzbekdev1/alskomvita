@@ -1,48 +1,49 @@
-import {NestFactory} from '@nestjs/core';
-import {AppModule} from './app.module';
-import {DocumentBuilder, SwaggerModule} from '@nestjs/swagger';
-import {ValidationPipe} from '@nestjs/common';
+import { NestFactory } from "@nestjs/core";
+import { AppModule } from "./app.module";
+import { DocumentBuilder, SwaggerModule } from "@nestjs/swagger";
+import { ValidationPipe } from "@nestjs/common";
 
 declare const module: any;
 
 async function bootstrap() {
 
-    // Config server & init swagger
-    const app = await NestFactory.create(AppModule);
-    const basePath = '/api/v1';
+  // Config server & init swagger
+  const app = await NestFactory.create(AppModule);
+  const basePath = "/api/v1";
 
-    // Enable CORS
-    app.enableCors();
+  // Enable CORS
+  app.enableCors();
 
-    // Add prefix
-    app.setGlobalPrefix(basePath);
-    app.useGlobalPipes(new ValidationPipe());
+  // Add prefix
+  app.setGlobalPrefix(basePath);
+  app.useGlobalPipes(new ValidationPipe());
 
-    // Swagger Configuration
-    const options = new DocumentBuilder()
-        .setTitle('Alskom API')
-        .setBasePath(basePath)
-        .setDescription('The Alskom API description')
-        .setVersion('1.0')
-        .addTag('vacancies', 'Vacancies')
-        .addTag('branches', 'Branches')
-        .addTag('products', 'Products')
-        .addTag('news', 'News')
-        // .addBearerAuth('Authorization', 'header')
-        .build();
-    const document = SwaggerModule.createDocument(app, options);
-    SwaggerModule.setup('/', app, document);
+  // Swagger Configuration
+  const options = new DocumentBuilder()
+    .setTitle("Alskom-VITA API")
+    .setBasePath(basePath)
+    .setDescription("The Alskom-VITA API description")
+    .setVersion("1.0")
+    .addTag("vacancies", "Vacancies")
+    .addTag("branches", "Branches")
+    .addTag("products", "Products")
+    .addTag("news", "News")
+    .addTag("leaderships", "Leaderships")
+    // .addBearerAuth('Authorization', 'header')
+    .build();
+  const document = SwaggerModule.createDocument(app, options);
+  SwaggerModule.setup("/", app, document);
 
-    // 🚀 Start the application 🚀
-    await app.listen(parseInt(process.env.PORT, 10) || 3000);
+  // 🚀 Start the application 🚀
+  await app.listen(parseInt(process.env.PORT, 10) || 3000);
 
-    if (module.hot) {
-        module.hot.accept();
-        module.hot.dispose(() => app.close());
-    }
+  if (module.hot) {
+    module.hot.accept();
+    module.hot.dispose(() => app.close());
+  }
 
 }
 
 bootstrap().then(r => {
-    console.log('App is load');
+  console.log("App is load");
 }).catch(reason => console.error(reason));

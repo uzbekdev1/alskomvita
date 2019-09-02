@@ -8,43 +8,24 @@
         </div>
 
         <div fxLayout="row" fxLayout.lt-sm="column" fxLayoutWrap="nowrap" fxLayoutGap="30px" fxLayoutGap.sm="8px">
-            <div fxFlex="33.33" [about]>
+            <div fxFlex="33.33" [about] *ngFor="let item of items">
                 <mat-card class="p-0 m-0">
-                    <img mat-card-image src="http://unicon.uz/uploads/IbugTUETF1.jpeg">
+                    <a href="javascript:void(0)" (click)="openDialog(item.id)">
+                        <img mat-card-image [src]="baseUrl+item.image">
+                    </a>
                     <mat-card-content>
-                        <h5 class="mat-headline" [ngStyle.sm]="{'font-size': '16px'}">Хасанов Хислат Пулатович </h5>
+                        <h5 class="mat-headline" [ngStyle.sm]="{'font-size': '16px'}">
+                            {{item.fullName}}
+                        </h5>
+                        <h4>
+                            {{item.jobTitle}}
+                        </h4>
                         <p class="mat-subheading-2" [ngStyle.sm]="{'font-size': '12px'}">
-                            Генеральный директор <br>
-                            Дата рождения: 23.04.1980 <br>
-                            Образование – высшее <br>
+                            E-mail : {{item.email}} <br>
+                            Телефон : {{item.phone}} <br>
+                            Дата рождения: {{item.dateOfBirth|date:'shortDate'}} <br>
+                            Образование : {{item.education}}
                         </p>
-                        <mat-divider class="mb-1"></mat-divider>
-                        <button class="portfolio-button" mat-icon-button>
-                            <mat-icon class="text-muted">email</mat-icon>
-                        </button>
-                        <button class="portfolio-button" mat-icon-button>
-                            <mat-icon class="text-muted">phone</mat-icon>
-                        </button>
-                    </mat-card-content>
-                </mat-card>
-            </div>
-            <div fxFlex="33.33" [about]>
-                <mat-card class="p-0 m-0">
-                    <img mat-card-image src="http://unicon.uz/uploads/VBB61l4qs1.jpeg">
-                    <mat-card-content>
-                        <h5 class="mat-headline" [ngStyle.sm]="{'font-size': '16px'}">Мухитдинов Азиз Хакимович </h5>
-                        <p class="mat-subheading-2" [ngStyle.sm]="{'font-size': '12px'}">
-                            Заместитель генерального директора <br>
-                            Дата рождения: 01.01.1980 <br>
-                            Образование – Высшее
-                        </p>
-                        <mat-divider class="mb-1"></mat-divider>
-                        <button class="portfolio-button" mat-icon-button>
-                            <mat-icon class="text-muted">email</mat-icon>
-                        </button>
-                        <button class="portfolio-button" mat-icon-button>
-                            <mat-icon class="text-muted">phone</mat-icon>
-                        </button>
                     </mat-card-content>
                 </mat-card>
             </div>

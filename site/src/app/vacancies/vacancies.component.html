@@ -7,55 +7,29 @@
             </div>
         </div>
 
-
         <div fxLayout="row" fxLayout.lt-md="column" fxLayoutWrap="nowrap" fxLayoutGap="30px">
-            <div fxFlex="50">
+            <div fxFlex="100">
                 <div fxLayout="column" fxLayoutAlign="center center" [ngStyle.xs]="{'padding': '0 60px'}">
 
                     <mat-accordion class="example-headers-align">
 
-                        <mat-expansion-panel hideToggle>
+                        <mat-expansion-panel hideToggle *ngFor="let item of items">
                             <mat-expansion-panel-header>
                                 <mat-panel-title>
-                                    Менеджер
+                                    {{item.position}}
                                 </mat-panel-title>
                                 <mat-panel-description>
-                                    Долгосрочное страхование
+                                    {{item.department}}
                                     <mat-icon>account_circle</mat-icon>
                                 </mat-panel-description>
                             </mat-expansion-panel-header>
                             <p>
-                                Требования:<br> Высшее экономическое образование и стаж работы в сфере страхования не менее
-                                3 лет
+                                Требования:<br>
+                                <span [innerHTML]="item.requirements"></span>
                             </p>
                             <p>
                                 Филиал:<br>
-                                <iframe src="https://yandex.com/map-widget/v1/-/CGG6ETiA" width="600" height="400"
-                                        frameborder="0"
-                                        allowfullscreen="true"></iframe>
-                            </p>
-
-                        </mat-expansion-panel>
-
-                        <mat-expansion-panel hideToggle>
-                            <mat-expansion-panel-header>
-                                <mat-panel-title>
-                                    Ассистент менеджера
-                                </mat-panel-title>
-                                <mat-panel-description>
-                                    Долгосрочное страхование
-                                    <mat-icon>account_circle</mat-icon>
-                                </mat-panel-description>
-                            </mat-expansion-panel-header>
-                            <p>
-                                Требования:<br> Высшее экономическое образование и стаж работы в сфере страхования не менее
-                                3 лет
-                            </p>
-                            <p>
-                                Филиал:<br>
-                                <iframe src="https://yandex.com/map-widget/v1/-/CGG6ETiA" width="600" height="400"
-                                        frameborder="0"
-                                        allowfullscreen="true"></iframe>
+                                {{item.placeOfWork}}
                             </p>
 
                         </mat-expansion-panel>
@@ -81,14 +55,13 @@
                                 </mat-panel-description>
                             </mat-expansion-panel-header>
                             <p>
-                                Требования: <br>Высшее экономическое образование и стаж работы в сфере страхования не менее
+                                Требования: <br>Высшее экономическое образование и стаж работы в сфере страхования не
+                                менее
                                 3 лет
                             </p>
                             <p>
                                 Филиал:<br>
-                                <iframe src="https://yandex.com/map-widget/v1/-/CGG6ETiA" width="600" height="400"
-                                        frameborder="0"
-                                        allowfullscreen="true"></iframe>
+                                Главный офис г. Ташкент
                             </p>
 
                         </mat-expansion-panel>
@@ -104,14 +77,13 @@
                                 </mat-panel-description>
                             </mat-expansion-panel-header>
                             <p>
-                                Требования:<br> Высшее экономическое образование и стаж работы в сфере страхования не менее
+                                Требования:<br> Высшее экономическое образование и стаж работы в сфере страхования не
+                                менее
                                 3 лет
                             </p>
                             <p>
                                 Филиал:<br>
-                                <iframe src="https://yandex.com/map-widget/v1/-/CGG6ETiA" width="600" height="400"
-                                        frameborder="0"
-                                        allowfullscreen="true"></iframe>
+                                Главный офис г. Ташкент
                             </p>
 
                         </mat-expansion-panel>

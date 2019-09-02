@@ -18,4 +18,7 @@ export class NewsEntity {
     @Column({type: "boolean", name: "is_published"})
     isPublished: boolean;
 
+    @Column({length: 250})
+    image: string;
+
 }
