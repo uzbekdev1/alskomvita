@@ -1,5 +1,10 @@
 import {Component, OnInit} from '@angular/core';
 import * as $ from 'jquery';
+import {environment} from '../../environments/environment';
+import {AppService} from '../shared/services/app.service';
+import {NewsEntity} from '../shared/entities/news.entity';
+import {MatDialog} from '@angular/material/dialog';
+import {NewsDetailsDialog} from '../layout/dialogs/entities/news/details.dialog';
 
 @Component({
     selector: 'app-news',
@@ -8,42 +13,66 @@ import * as $ from 'jquery';
 })
 export class NewsComponent implements OnInit {
 
-    constructor() {
+    items: NewsEntity[];
+    baseUrl = environment.adminUrl + '/upload/';
+
+    constructor(private  service: AppService,
+                public dialog: MatDialog) {
     }
 
     ngOnInit() {
 
-        jQuery(function ($) {
+        this.service.getNews().subscribe(data => {
 
-            let owl = $('.owl-carousel');
+            console.log('News ', data);
 
-            owl.owlCarousel({
-                margin: 10,
-                touchDrag: true,
-                responsive: {
-                    0: {
-                        items: 1
-                    },
-                    600: {
-                        items: 3
-                    },
-                    1000: {
-                        items: 5
-                    }
-                }
-            });
+            this.items = data;
 
-            $('.customNextBtn').click(function () {
-                owl.trigger('next.owl.carousel');
-            });
+            setTimeout(() => {
 
-            $('.customPrevBtn').click(function () {
-                owl.trigger('prev.owl.carousel');
-            });
+                jQuery(function ($) {
 
+                    let owl = $('.owl-carousel');
+
+                    owl.owlCarousel({
+                        margin: 10,
+                        touchDrag: true,
+                        responsive: {
+                            0: {
+                                items: 1
+                            },
+                            600: {
+                                items: 3
+                            },
+                            1000: {
+                                items: 5
+                            }
+                        }
+                    });
+
+                    $('.customNextBtn').click(function () {
+                        owl.trigger('next.owl.carousel');
+                    });
+
+                    $('.customPrevBtn').click(function () {
+                        owl.trigger('prev.owl.carousel');
+                    });
+
+                });
+
+            }, 2000)
         });
 
     }
 
+    openDialog(id: number) {
+        const dialogRef = this.dialog.open(NewsDetailsDialog, {
+            data: {id: id},
+        });
+
+        dialogRef.afterClosed().subscribe(result => {
+            console.log(`Dialog result: ${result}`);
+        });
+    }
 
 }

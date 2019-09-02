@@ -9,10 +9,10 @@ export class BranchEntity {
     @Column({length: 50})
     name: string;
 
-    @Column({length: 250})
-    address: string;
+    @Column({type: 'text'})
+    contact: string;
 
-    @Column({length: 25})
-    phone: string;
+    @Column({length: 250})
+    image: string;
 
 }

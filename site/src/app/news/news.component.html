@@ -7,39 +7,22 @@
         </div>
 
         <div class="owl-carousel owl-theme">
-            <div class="item" [about]>
+            <div class="item" [about] *ngFor="let item of items">
                 <mat-card>
-                    <img mat-card-image width="300" height="150" src="assets/img/news/1.jpg">
+                    <a href="javascript:void(0)" (click)="openDialog(item.id)">
+                        <img mat-card-image [src]="baseUrl+item.image">
+                    </a>
                     <mat-card-content>
-                        <a href="https://kun.uz/uz/news/2019/08/26/mushakbozlik-va-sayillar-toshkentda-mustaqillik-bayrami-qanday-nishonlanishi-malum-qilindi"
-                           target="_blank">
-                            <h5 class="mat-headline" [ngStyle.sm]="{'font-size': '16px'}">
-                                Mustaqillik bayrami
-                            </h5>
-                        </a>
+                        <h5 class="mat-headline" [ngStyle.sm]="{'font-size': '16px'}">
+                            {{item.title}}
+                        </h5>
                         <p class="mat-subheading-2" [ngStyle.sm]="{'font-size': '12px'}">
-                            Toshkentda Mustaqillik bayrami qanday nishonlanishi ma'lum qilindi.
-                        </p>
-                    </mat-card-content>
-                </mat-card>
-            </div>
-            <div class="item" [about]>
-                <mat-card>
-                    <img mat-card-image width="300" height="150" src="assets/img/news/2.jpg">
-                    <mat-card-content>
-                        <a href="https://ru.wikipedia.org/wiki/%D0%A1%D1%82%D0%B0%D1%80%D1%82%D0%B0%D0%BF"
-                           target="_blank">
-                            <h5 class="mat-headline" [ngStyle.sm]="{'font-size': '16px'}">
-                                Стартап
-                            </h5>
-                        </a>
-                        <p class="mat-subheading-2" [ngStyle.sm]="{'font-size': '12px'}">
-                            Термин впервые использован в журнале Forbes в августе 1973 года
                         </p>
                     </mat-card-content>
                 </mat-card>
             </div>
         </div>
+
         <div fxLayout="row" fxLayoutAlign="center center">
             <button class="customPrevBtn" mat-raised-button color="primary">Предыдущее</button>
             <button class="customNextBtn" mat-raised-button color="accent">Следующий</button>

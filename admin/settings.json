@@ -17,19 +17,19 @@
                 "allowNull": false,
                 "defaultValue": null,
                 "listview": {
-                    "show": true
+                    "show": false
                 },
                 "editview": {
                     "show": false
                 }
             },
             {
-                "name": "title",
-                "verbose": "Title",
+                "name": "position",
+                "verbose": "Position",
                 "control": {
                     "text": true
                 },
-                "type": "varchar(250)",
+                "type": "varchar(120)",
                 "allowNull": false,
                 "defaultValue": null,
                 "listview": {
@@ -40,12 +40,12 @@
                 }
             },
             {
-                "name": "date",
-                "verbose": "Date",
+                "name": "department",
+                "verbose": "Department",
                 "control": {
-                    "date": true
+                    "text": true
                 },
-                "type": "date",
+                "type": "varchar(120)",
                 "allowNull": false,
                 "defaultValue": null,
                 "listview": {
@@ -56,8 +56,8 @@
                 }
             },
             {
-                "name": "description",
-                "verbose": "Description",
+                "name": "requirements",
+                "verbose": "Requirements",
                 "control": {
                     "textarea": true,
                     "editor": "ck-full"
@@ -67,6 +67,22 @@
                 "defaultValue": null,
                 "listview": {
                     "show": false
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "place_of_work",
+                "verbose": "Place of work",
+                "control": {
+                    "textarea": true
+                },
+                "type": "varchar(250)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
                 },
                 "editview": {
                     "show": true
@@ -102,7 +118,7 @@
                 "allowNull": false,
                 "defaultValue": null,
                 "listview": {
-                    "show": true
+                    "show": false
                 },
                 "editview": {
                     "show": false
@@ -125,6 +141,22 @@
                 }
             },
             {
+                "name": "image",
+                "verbose": "Image",
+                "control": {
+                    "file": true
+                },
+                "type": "varchar(250)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": false
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
                 "name": "description",
                 "verbose": "Description",
                 "control": {
@@ -136,22 +168,6 @@
                 "defaultValue": null,
                 "listview": {
                     "show": false
-                },
-                "editview": {
-                    "show": true
-                }
-            },
-            {
-                "name": "price",
-                "verbose": "Price",
-                "control": {
-                    "number": true
-                },
-                "type": "decimal",
-                "allowNull": false,
-                "defaultValue": null,
-                "listview": {
-                    "show": true
                 },
                 "editview": {
                     "show": true
@@ -207,7 +223,7 @@
                 "allowNull": false,
                 "defaultValue": null,
                 "listview": {
-                    "show": true
+                    "show": false
                 },
                 "editview": {
                     "show": false
@@ -230,10 +246,10 @@
                 }
             },
             {
-                "name": "address",
-                "verbose": "Address",
+                "name": "image",
+                "verbose": "Image",
                 "control": {
-                    "text": true
+                    "file": true
                 },
                 "type": "varchar(250)",
                 "allowNull": false,
@@ -246,16 +262,17 @@
                 }
             },
             {
-                "name": "phone",
-                "verbose": "Phone",
+                "name": "contact",
+                "verbose": "Contact",
                 "control": {
-                    "text": true
+                    "textarea": true,
+                    "editor": "ck-full"
                 },
-                "type": "varchar(25)",
+                "type": "text",
                 "allowNull": false,
                 "defaultValue": null,
                 "listview": {
-                    "show": true
+                    "show": false
                 },
                 "editview": {
                     "show": true
@@ -291,7 +308,7 @@
                 "allowNull": false,
                 "defaultValue": null,
                 "listview": {
-                    "show": true
+                    "show": false
                 },
                 "editview": {
                     "show": false
@@ -308,6 +325,22 @@
                 "defaultValue": null,
                 "listview": {
                     "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "image",
+                "verbose": "Image",
+                "control": {
+                    "file": true
+                },
+                "type": "varchar(250)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": false
                 },
                 "editview": {
                     "show": true
@@ -361,6 +394,171 @@
                 "defaultValue": null,
                 "listview": {
                     "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            }
+        ],
+        "mainview": {
+            "show": true
+        },
+        "listview": {
+            "order": {},
+            "page": 25
+        },
+        "editview": {
+            "readonly": false
+        }
+    },
+    "leaderships": {
+        "slug": "Leaderships",
+        "table": {
+            "name": "leaderships",
+            "pk": "id",
+            "verbose": "Leaderships"
+        },
+        "columns": [
+            {
+                "name": "id",
+                "verbose": "#",
+                "control": {
+                    "text": true
+                },
+                "type": "integer",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": false
+                },
+                "editview": {
+                    "show": false
+                }
+            },
+            {
+                "name": "full_name",
+                "verbose": "Full Name",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(120)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "phone",
+                "verbose": "Phone",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(50)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "email",
+                "verbose": "E-mail",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(50)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "job_title",
+                "verbose": "Job Title",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(250)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "education",
+                "verbose": "Education",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(250)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "date_of_birth",
+                "verbose": "Date of birth",
+                "control": {
+                    "date": true
+                },
+                "type": "date",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "image",
+                "verbose": "Image",
+                "control": {
+                    "file": true
+                },
+                "type": "varchar(250)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": false
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "experience",
+                "verbose": "Experience",
+                "control": {
+                    "textarea": true,
+                    "editor": "ck-full"
+                },
+                "type": "text",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": false
                 },
                 "editview": {
                     "show": true

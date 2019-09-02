@@ -56,6 +56,24 @@ section {
 customize
 */
 
+.insurance-resource {
+  background-color: #673ab7 !important;
+  color: white !important;
+}
+
+.insurance-resource:hover {
+  background-color: #f18217 !important;
+  color: white !important;
+}
+
+.insurance-resource .material-icons {
+  color: white !important;
+}
+
+.insurance-resource .material-icons:hover {
+  color: white !important;
+}
+
 .mat-flat-button.mat-accent {
   background-color: #f18217 !important;
   color: white !important;

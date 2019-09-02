@@ -11,9 +11,8 @@
     <mat-nav-list class="navigation-list" fxLayout="row" fxShow="false" fxShow.gt-xs="true">
 
         <a mat-list-item [matMenuTriggerFor]="belowMenu">Компания</a>
-        <a mat-list-item href="#services">Услуги</a>
+        <a mat-list-item href="#news">Новости</a>
         <a mat-list-item href="#products">Продукты</a>
-        <a mat-list-item href="#resources">Ресурсы</a>
         <a mat-list-item href="#contact">Контакты</a>
 
         <mat-menu #belowMenu="matMenu" xPosition="after">
@@ -21,11 +20,14 @@
             <a href="#leaderships" mat-menu-item>Руководство</a>
             <a href="#branches" mat-menu-item>Наши филиалы</a>
             <a href="#vacancies" mat-menu-item>Вакансии</a>
-            <a href="#news" mat-menu-item>Новости</a>
         </mat-menu>
 
     </mat-nav-list>
-    <span class="navigation-spacer">
+    <span class="navigation-spacer" style="text-align: center !important;">
+        <a href="#products" class="insurance-resource" mat-flat-button color="primary">
+            <mat-icon>add_alert</mat-icon>
+            Страховой случай
+        </a>
     </span>
     <button id="contact-fab-button" (click)="openDialog()" mat-flat-button color="primary" matTooltip="Изменение языка"
             [matTooltipPosition]="'left'">
@@ -46,9 +48,8 @@
             </a>
 
             <a mat-list-item href="#about">О нас</a>
-            <a mat-list-item href="#services">Услуги</a>
+            <a mat-list-item href="#news">Новости</a>
             <a mat-list-item href="#products">Продукты</a>
-            <a mat-list-item href="#resources">Ресурсы</a>
             <a mat-list-item href="#vacancies">Вакансии</a>
             <a mat-list-item href="#contact">Контакты</a>
 
@@ -62,8 +63,6 @@
         <app-about></app-about>
         <app-leaderships></app-leaderships>
         <app-branches></app-branches>
-        <app-resources></app-resources>
-        <app-services></app-services>
         <app-products></app-products>
         <app-vacancies></app-vacancies>
         <app-news></app-news>

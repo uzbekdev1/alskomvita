@@ -1,6 +1,6 @@
 import {Controller, Get, Param, ParseIntPipe} from '@nestjs/common';
 import {Observable} from 'rxjs';
-import {Vacancy} from './cavancy.entity';
+import {VacancyEntity} from './vacancy.entity';
 import {VacanciesService} from './vacancies.service';
 import {ApiImplicitParam, ApiUseTags} from '@nestjs/swagger';
 
@@ -12,7 +12,7 @@ export class VacanciesController {
     }
 
     @Get()
-    getAll(): Observable<Vacancy[]> {
+    getAll(): Observable<VacancyEntity[]> {
         return this.vacanciesService.getAll();
     }
 

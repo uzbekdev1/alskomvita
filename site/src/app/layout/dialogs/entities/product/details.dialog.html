@@ -1,0 +1,7 @@
+<h2 mat-dialog-title>Описание:</h2>
+<mat-dialog-content class="mat-typography">
+    <p [innerHTML]="item.description"></p>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+    <button mat-raised-button color="accent" [mat-dialog-close]="true" cdkFocusInitial>Закрыть</button>
+</mat-dialog-actions>
