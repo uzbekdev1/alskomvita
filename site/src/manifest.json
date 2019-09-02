@@ -1,0 +1,16 @@
+{
+  "name": "alskom-vita",
+  "short_name": "Alskom-Vita",
+  "theme_color": "#488aff",
+  "background_color": "#488aff",
+  "scope": "/",
+  "start_url": "/",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "assets/img/logo.png",
+      "sizes": "199x64",
+      "type": "image/png"
+    }
+  ]
+}

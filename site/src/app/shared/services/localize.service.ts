@@ -37,9 +37,9 @@ export class LocalizeService {
     changeLang(lang: string) {
         localStorage.setItem(this.keyLang, lang);
 
-        if (lang == 'ru') {
+        if (lang === 'ru') {
             registerLocaleData(localeRu, 'ru-RU', localeRuExtra);
-        } else if (lang == 'uz') {
+        } else if (lang === 'uz') {
             registerLocaleData(localeUz, 'uz-UZ', localeUzExtra);
         } else {
             registerLocaleData(localeEn, 'en-EN', localeEnExtra);

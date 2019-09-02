@@ -1,31 +1,33 @@
-<section id="news" [ngStyle.lt-md]="{'margin-top': '50px', 'margin-bottom': '50px'}">
-    <div class="container">
-        <div class="blog-section blog-heading mat-typography" fxLayout="column" fxLayoutAlign="center center">
-            <div>
-                <h2 [ngStyle.lt-md]="{'margin-bottom': '15px'}">Новости</h2>
-            </div>
-        </div>
+<section id="blog" class="padd-section wow fadeInUp">
 
-        <div class="owl-carousel owl-theme">
-            <div class="item" [about] *ngFor="let item of items">
-                <mat-card>
-                    <a href="javascript:void(0)" (click)="openDialog(item.id)">
-                        <img mat-card-image [src]="baseUrl+item.image">
-                    </a>
-                    <mat-card-content>
-                        <h5 class="mat-headline" [ngStyle.sm]="{'font-size': '16px'}">
-                            {{item.title}}
-                        </h5>
-                        <p class="mat-subheading-2" [ngStyle.sm]="{'font-size': '12px'}">
-                        </p>
-                    </mat-card-content>
-                </mat-card>
-            </div>
-        </div>
+  <div class="container">
+    <div class="section-title text-center">
 
-        <div fxLayout="row" fxLayoutAlign="center center">
-            <button class="customPrevBtn" mat-raised-button color="primary">Предыдущее</button>
-            <button class="customNextBtn" mat-raised-button color="accent">Следующий</button>
-        </div>
+      <h2>Новости</h2>
+      <p class="separator"></p>
+
     </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-6 col-lg-4" *ngFor="let item of items">
+        <div class="block-blog text-left">
+          <a href="#">
+            <img [src]="baseUrl+item.image" alt="img">
+          </a>
+          <div class="content-blog">
+            <h4>
+              <a href="#">{{item.title}}</a>
+            </h4>
+            <span>{{item.date|date:'shortDate'}}</span>
+            <a class="pull-right readmore" href="#">Подробнее</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
 </section>
+

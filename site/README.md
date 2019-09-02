@@ -1,52 +1,27 @@
-# NGLP - Angular Material Landing Page
+# App
 
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.1.
 
-## Overview
+## Development server
 
-Angular is a framework for building client applications. Why companies choose Angular? Angular - reliable! Angular has strong support! There are many reusable tools, libraries and code samples for Angular. See [Angular features](https://angular.io/features).
-NGLP built with Angular and Angular CLI. Landing Page is developed on the basis of the Angular Material framework. See [Angular Material features](https://material.angular.io/).
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Features
+## Code scaffolding
 
-* Material Design
-* Responsive layout for mobile & desktop by Angular Flex Layout
-* Sidenav component on mobile
-* Sticky Navigation on mobile & desktop
-* Reacting to scroll events
-* Cross-browser animations
-* Custom Angular Material theme
-* Modal dialog contact form
-* Contact form fields validation
-* Touch enabled jQuery plugin for beautiful responsive and material design carousel slider.
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## QuickStart
+## Build
 
-### Set up the Development Environment
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-Install [Node.js® and npm](https://nodejs.org/en/download/) if they are not already installed on your machine.
+## Running unit tests
 
-Then install the [Angular CLI](https://github.com/angular/angular-cli) globally. If you need additional information about the installation, see Angular CLI [get started guide](https://github.com/angular/angular-cli/wiki#getting-started).
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-Go to the project directory and install dependencies.
+## Running end-to-end tests
 
-```
-$ npm install
+Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-```
+## Further help
 
-In the project directory launch the server. 
-
-```
-$ ng serve --open
-
-```
-
-You can see additional [Angular CLI commands](https://github.com/angular/angular-cli/wiki#additional-commands)
-
-### Deployment
-
-See [simplest deployment techniques](https://angular.io/guide/deployment) for deploying your Angular application to a remote server.
-
-## Help Docs
-
-[Help Documentations](https://evgensharyy.github.io/nglp_doc/#helpdocs)
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).

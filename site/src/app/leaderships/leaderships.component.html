@@ -1,35 +1,33 @@
-<section id="leaderships" [ngStyle.lt-md]="{'margin-top': '30px', 'margin-bottom': '30px'}">
-    <div class="container portfolio-card">
+<section id="team" class="padd-section text-center wow fadeInUp">
 
-        <div class="portfolio-section portfolio-heading mat-typography" fxLayout="column" fxLayoutAlign="center center">
-            <div>
-                <h2 [ngStyle.lt-md]="{'margin-bottom': '15px'}">Руководство</h2>
-            </div>
-        </div>
+  <div class="container">
+    <div class="section-title text-center">
 
-        <div fxLayout="row" fxLayout.lt-sm="column" fxLayoutWrap="nowrap" fxLayoutGap="30px" fxLayoutGap.sm="8px">
-            <div fxFlex="33.33" [about] *ngFor="let item of items">
-                <mat-card class="p-0 m-0">
-                    <a href="javascript:void(0)" (click)="openDialog(item.id)">
-                        <img mat-card-image [src]="baseUrl+item.image">
-                    </a>
-                    <mat-card-content>
-                        <h5 class="mat-headline" [ngStyle.sm]="{'font-size': '16px'}">
-                            {{item.fullName}}
-                        </h5>
-                        <h4>
-                            {{item.jobTitle}}
-                        </h4>
-                        <p class="mat-subheading-2" [ngStyle.sm]="{'font-size': '12px'}">
-                            E-mail : {{item.email}} <br>
-                            Телефон : {{item.phone}} <br>
-                            Дата рождения: {{item.dateOfBirth|date:'shortDate'}} <br>
-                            Образование : {{item.education}}
-                        </p>
-                    </mat-card-content>
-                </mat-card>
-            </div>
-        </div>
+      <h2>Руководство</h2>
+      <p class="separator"></p>
 
     </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-6 col-md-4 col-lg-3" *ngFor="let item of items">
+        <div class="team-block bottom">
+          <img
+            [src]="baseUrl+item.image"
+            class="img-responsive" alt="img">
+          <div class="team-content">
+            <ul class="list-unstyled">
+              <li><i class="fa fa-phone"></i> {{item.phone}}</li>
+              <li><i class="fa fa-envelope"></i>{{item.email}}</li>
+            </ul>
+            <h4>{{item.fullName}}</h4>
+            <span>{{item.jobTitle}}</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
 </section>
