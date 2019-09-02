@@ -1,0 +1,44 @@
+{
+  "home": {
+    "insuranceOffer": "Sugʻurta hodisasi",
+    "heroTitle": "Hayotni sug'urta qiladigan <br> birinchi kompaniya",
+    "heroContent": "Yangi sug'urta kompaniyasini tashkil etishdan asosiy maqsad <Br> mijozlarga keng  ko'lamli sug'urta  xizmatlarini taqdim etish orqali  <Br> biznesning kengayishi va rivojlanishini ko'rsatadi."
+  },
+  "contact": {
+    "title": "Qayta aloqa",
+    "headline": "Xabar qoldiring, biz sizga qo'ng'iroq qilamiz.",
+    "message": "Xabar",
+    "fullName": "F.I.SH."
+  },
+  "about": {
+    "headline": "“ALSKOM-VITA” sug’urta kompaniyasi ma’suliyati cheklangan jamiyati (keyingi o’rinlarda “Kompaniya” deb ataladi) O’zbekiston Respublikasida hayotni sug’urtalash sohasini rivojlanish istiqbollarini inobatga olib, hayotni jamg’arib sug’urtalash, ixtiyoriy tibbiy sug’urta, xorijga chiquvchilarni sug’urtalash, turli kasalliklardan sug’urtalash bo’yicha kompleks xizmatlar ko’rsatish maqsadida “ALSKOM” sug’urta kompaniyasi aksiyadorlik jamiyati Kuzatuv kengashining 2019 yil 4 apreldagi qarori bilan tashkil etildi.",
+    "listTitle": "Quyidagilar Kompaniyaning maqsadlari hisoblanadi:",
+    "listItem1": "sug’urta xizmatlaridan foydalanuvchilarga ishonchli sug’urta kafolatlarini ta’minlash;",
+    "listItem2": "aholining ish bilan band qatlamlarini uzoq istiqbolga pul mablag’larini jamg’arish hamda ularning hayoti va sog’ligini sug’urta himoyasi bilan ta’minlash ehtiyojlarini qanoatlantirish imkonini beradigan yangi moliyaviy vositalarni joriy etish;",
+    "listItem3": "aholi keng qatlamlarini sug’urta xizmatlariga (hayotni sug’urtalashning  jamg’arib boriladigan turlari, ixtiyoriy tibbiy sug’urta, hayotni va salomatlikni baxtsiz hodisalardan sug’urtalash va boshqalar) bo’lgan ehtiyojini to’laqonli qanoatlantirish;",
+    "listItem4": "hayot va sog’likni sug’urtalashning xalqaro standartlarini amaliyotga tatbiq etish.",
+    "footer": "Kompaniyaga hayotni sug’urta qilish tarmog’ining barcha klasslari, shuningdek, umumiy sug’urta tarmog’ining 1 va 2 klasslari bo’yicha ixtiyoriy shaklda sug’urta faoliyatini amalga oshirish uchun O’zbekiston Respublikasi Moliya Vazirligi tomonidan 2019 yil 29 mayda SF 243-son litsenziya berilgan. <br> Kompaniyanig shakllangan ustav kapitali 10,11 milliard so’mni tashkil etadi. <br>Kompaniya kutilmagan vaziyatlarda moliyaviy himoyani ta’minlaydigan sifatli sug’urta xizmatlarini, shuningdek kapitalni jamg’arib borish va ko’paytirish imkoniyatini taklif etadi. <br> “ALSKOM-VITA” – Siz uchun eng qimmatli bo’lgan hayotingizni, yaqinlaringiz farovonligini va kelajagingizni himoya qiladi!"
+  },
+  "common": {
+    "home": "Bosh sahifa",
+    "company": "Kampaniya haqida",
+    "about": "Biz haqimizda",
+    "leaderships": "Rahbariyat",
+    "branches": "Bizning filiallarimiz",
+    "vacancies": "Ish o'rinlari",
+    "products": "Mahsulotlar",
+    "news": "Yangiliklar",
+    "contact": "Aloqa",
+    "phone": "Telefon ",
+    "address": "Manzil",
+    "send": "Yuborish",
+    "readMore": "Batafsil"
+  },
+  "footer": {
+    "followUs": "Bizga qoshiling",
+    "addressLine": "100202 Toshkent sh <br> A.Temur ko'chasi 109 uy",
+    "developBy": "Veb-sayt yaratdi"
+  },
+  "header": {
+  }
+}

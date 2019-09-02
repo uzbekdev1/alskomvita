@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0c8baf11-953e-4b6d-a285-4cf901c4ef8f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../admin/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../admin/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../site/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../site/src/app/app.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../site/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../site/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../site/src/app/layout/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../site/src/app/layout/header/header.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../site/src/app/layout/header/header.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../site/src/app/layout/header/header.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../site/src/app/shared/services/localize.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../site/src/app/shared/services/localize.service.ts" afterDir="false" />
-    </list>
+    <list default="true" id="0c8baf11-953e-4b6d-a285-4cf901c4ef8f" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +26,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/vacancies" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -47,18 +39,19 @@
     <property name="ts.external.directory.path" value="C:\Elyor revisions\alskom\api\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Elyor revisions\alskom\api\src\vacancies" />
+      <recent name="C:\Elyor revisions\alskom\api\src\products" />
+      <recent name="C:\Elyor revisions\alskom\api\src\news" />
+      <recent name="C:\Elyor revisions\alskom\api\src\leaderships" />
+      <recent name="C:\Elyor revisions\alskom\api\src" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Elyor revisions\alskom\api\src" />
+      <recent name="C:\Elyor revisions\alskom\api\src\branches" />
       <recent name="C:\tmp\alskom\alskom-dev\api\src" />
       <recent name="C:\tmp\alskom\alskom-dev\api\src\app\models" />
       <recent name="C:\tmp\alskom\alskom-dev\api\src\app" />
-      <recent name="C:\tmp\alskom\alskom-dev\api" />
-      <recent name="C:\tmp\alskom\alskom-dev\api\src\products" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Elyor revisions\alskom\api\src" />
-      <recent name="C:\tmp\alskom\alskom-dev\api\src\environments" />
-      <recent name="C:\tmp\alskom\alskom-dev\api\src\app" />
-      <recent name="C:\tmp\alskom\alskom-dev\api\src" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -158,7 +151,7 @@
       <workItem from="1567333994822" duration="821000" />
       <workItem from="1567350073237" duration="8222000" />
       <workItem from="1567387633355" duration="1210000" />
-      <workItem from="1567440325541" duration="3285000" />
+      <workItem from="1567440325541" duration="8400000" />
     </task>
     <servers />
   </component>

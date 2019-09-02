@@ -12,14 +12,15 @@ export class HeaderComponent implements OnInit {
 
   constructor(private localize: LocalizeService) {
 
-    this.langList = this.localize.getList().filter(a => a.value != this.localize.getLang());
-    this.currentLang = this.localize.getList().find(a => a.value == this.localize.getLang());
+    this.langList = this.localize.getList().filter(a => a.value != this.localize.getLangCode());
+    this.currentLang = this.localize.getList().find(a => a.value == this.localize.getLangCode());
   }
 
   ngOnInit() {
   }
 
   changeLang(lang: string) {
+
     this.localize.changeLang(lang);
 
     location.reload(true);

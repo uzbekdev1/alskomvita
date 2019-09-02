@@ -189,8 +189,10 @@ span {
 #hero {
   width: 100%;
   height: calc(100vh - 40px);
-  background: url(https://image.freepik.com/free-photo/old-man-hands-holding-heart-shape-white-background-health-insurance-love-concept_43314-1034.jpg) center center no-repeat;
-  background-size: 100%;
+  background-image: url(../img/main34.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
   position: relative;
   margin-top: 40px;
 }

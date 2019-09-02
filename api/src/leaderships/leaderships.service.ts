@@ -12,8 +12,10 @@ export class LeadershipsService {
         private  branchRepository: Repository<LeadershipEntity>) {
     }
 
-    getAll(): Observable<LeadershipEntity[]> {
-        return from(this.branchRepository.find());
+    getAll(lang:number): Observable<LeadershipEntity[]> {
+        return from(this.branchRepository.find({
+            languageId:lang
+        }));
     }
 
     getItem(id: number) {

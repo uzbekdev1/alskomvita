@@ -21,4 +21,7 @@ export class NewsEntity {
     @Column({length: 250})
     image: string;
 
+    @Column({ name: "language_id", nullable: true })
+    languageId: number;
+
 }
