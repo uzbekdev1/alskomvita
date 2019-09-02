@@ -1,15 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormGroupDirective, NgForm, FormControl, Validators } from '@angular/forms';
-import { ErrorStateMatcher } from '@angular/material/core';
-import { ContactForm } from '../shared/models/contact.form';
-
-/** Error when invalid control is dirty, touched, or submitted. */
-export class NgLpErrorStateMatcher implements ErrorStateMatcher {
-  isErrorState(control: FormControl | null, form: FormGroupDirective | NgForm | null): boolean {
-    const isSubmitted = form && form.submitted;
-    return !!(control && control.invalid && (control.dirty || control.touched || isSubmitted));
-  }
-}
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-contact',
@@ -18,30 +7,13 @@ export class NgLpErrorStateMatcher implements ErrorStateMatcher {
 })
 export class ContactComponent implements OnInit {
 
-  nameFormControl = new FormControl('', [
-    Validators.required
-  ]);
- 
-  emailFormControl = new FormControl('', [
-    Validators.required,
-    Validators.email,
-  ]);
+  constructor() {
+  }
 
-  commentFormControl = new FormControl('', [
-    Validators.required,
-  ]);
-
-  matcher = new NgLpErrorStateMatcher();
-
-  contact = new ContactForm();
-
-  constructor() { }
-
-  ngOnInit() {}
+  ngOnInit() {
+  }
 
   onSubmit() {
-
-  	console.log("FORM SEND");
 
   }
 

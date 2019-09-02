@@ -1,45 +1,25 @@
-<section id="branches" class="mat-typography" [ngStyle.lt-md]="{'margin-top': '30px', 'margin-bottom': '30px'}">
-    <div class="container">
+<section id="screenshots" class="padd-section text-center wow fadeInUp">
 
-        <div class="about-section about-heading" fxLayout="column" fxLayoutAlign="center center">
-            <div>
-                <h2 [ngStyle.lt-md]="{'margin-bottom': '15px'}">Наши филиалы</h2>
-            </div>
-        </div>
-
-
-        <div fxLayout="row" fxLayout.lt-md="column" fxLayoutWrap="nowrap" fxLayoutGap="30px">
-            <div fxFlex="100">
-                <div fxLayout="column" fxLayoutAlign="center center" [ngStyle.xs]="{'padding': '0 60px'}">
-
-                    <mat-accordion class="example-headers-align">
-
-                        <mat-expansion-panel hideToggle expanded="true" *ngFor="let item of items">
-                            <mat-expansion-panel-header>
-                                <mat-panel-title>
-                                    {{item.name}}
-                                </mat-panel-title>
-                                <mat-panel-description>
-                                    <span>
-                                        &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;
-                                    </span>
-                                    <mat-icon>map
-                                    </mat-icon>
-                                </mat-panel-description>
-                            </mat-expansion-panel-header>
-                            <p>
-                                <img [src]="baseUrl+item.image"/>
-                            </p>
-                            <p [innerHTML]="item.contact">
-                            </p>
-                        </mat-expansion-panel>
-
-
-                    </mat-accordion>
-
-                </div>
-            </div>
-
-        </div>
+  <div class="container">
+    <div class="section-title text-center">
+      <h2>Наши филиалы</h2>
+      <p class="separator"></p>
     </div>
+  </div>
+
+  <div class="container">
+    <div class="owl-carousel owl-theme">
+      <div class="item" *ngFor="let item of items">
+        <h4>
+          {{item.name}}
+        </h4>
+        <img [src]="baseUrl+item.image" class="img-thumbnail" alt="img">
+        <p [innerHTML]="item.contact">
+
+        </p>
+      </div>
+
+    </div>
+  </div>
+
 </section>

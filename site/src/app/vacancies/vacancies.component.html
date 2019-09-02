@@ -1,97 +1,49 @@
-<section id="vacancies" class="mat-typography" [ngStyle.lt-md]="{'margin-top': '30px', 'margin-bottom': '30px'}">
-    <div class="container">
+<section id="testimonials" class="padd-section text-center wow fadeInUp">
 
-        <div class="about-section about-heading" fxLayout="column" fxLayoutAlign="center center">
-            <div>
-                <h2 [ngStyle.lt-md]="{'margin-bottom': '15px'}">Вакансии</h2>
-            </div>
-        </div>
-
-        <div fxLayout="row" fxLayout.lt-md="column" fxLayoutWrap="nowrap" fxLayoutGap="30px">
-            <div fxFlex="100">
-                <div fxLayout="column" fxLayoutAlign="center center" [ngStyle.xs]="{'padding': '0 60px'}">
-
-                    <mat-accordion class="example-headers-align">
-
-                        <mat-expansion-panel hideToggle *ngFor="let item of items">
-                            <mat-expansion-panel-header>
-                                <mat-panel-title>
-                                    {{item.position}}
-                                </mat-panel-title>
-                                <mat-panel-description>
-                                    {{item.department}}
-                                    <mat-icon>account_circle</mat-icon>
-                                </mat-panel-description>
-                            </mat-expansion-panel-header>
-                            <p>
-                                Требования:<br>
-                                <span [innerHTML]="item.requirements"></span>
-                            </p>
-                            <p>
-                                Филиал:<br>
-                                {{item.placeOfWork}}
-                            </p>
-
-                        </mat-expansion-panel>
-
-                    </mat-accordion>
-
-                </div>
-            </div>
-
-            <div fxFlex="50">
-                <div fxLayout="column" fxLayoutAlign="center center" [ngStyle.lt-md]="{'padding': '0 60px'}">
-
-                    <mat-accordion class="example-headers-align">
-
-                        <mat-expansion-panel hideToggle>
-                            <mat-expansion-panel-header>
-                                <mat-panel-title>
-                                    Менеджер
-                                </mat-panel-title>
-                                <mat-panel-description>
-                                    Общее страхование
-                                    <mat-icon>account_circle</mat-icon>
-                                </mat-panel-description>
-                            </mat-expansion-panel-header>
-                            <p>
-                                Требования: <br>Высшее экономическое образование и стаж работы в сфере страхования не
-                                менее
-                                3 лет
-                            </p>
-                            <p>
-                                Филиал:<br>
-                                Главный офис г. Ташкент
-                            </p>
-
-                        </mat-expansion-panel>
-
-                        <mat-expansion-panel hideToggle>
-                            <mat-expansion-panel-header>
-                                <mat-panel-title>
-                                    Менеджер
-                                </mat-panel-title>
-                                <mat-panel-description>
-                                    Маркетинг и связи с общественностью
-                                    <mat-icon>account_circle</mat-icon>
-                                </mat-panel-description>
-                            </mat-expansion-panel-header>
-                            <p>
-                                Требования:<br> Высшее экономическое образование и стаж работы в сфере страхования не
-                                менее
-                                3 лет
-                            </p>
-                            <p>
-                                Филиал:<br>
-                                Главный офис г. Ташкент
-                            </p>
-
-                        </mat-expansion-panel>
-
-                    </mat-accordion>
-                </div>
-            </div>
-
-        </div>
+  <div class="container">
+    <div class="section-title text-center">
+      <h2>Вакансии</h2>
+      <p class="separator"></p>
     </div>
+  </div>
+
+  <div class="container">
+    <div class="row justify-content-center">
+
+      <div class="col-md-8">
+
+        <div class="testimonials-content">
+          <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+
+            <div class="carousel-inner" role="listbox">
+
+              <div class="carousel-item" *ngFor="let item of items;let i=index" [class.active]="i==0">
+                <div class="top-top">
+
+                  <h2>{{item.position}}</h2>
+                  <h4>{{item.department}}<span>{{item.placeOfWork}}</span></h4>
+
+                  <p [innerHTML]="item.requirements"></p>
+
+                </div>
+              </div>
+
+            </div>
+
+            <div class="btm-btm">
+
+              <ul class="list-unstyled carousel-indicators">
+                <li data-target="#carousel-example-generic" *ngFor="let item of items;let i=index"
+                    [attr.data-slide-to]="i"
+                    [class.active]="i==0"></li>
+              </ul>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
 </section>

@@ -1,32 +1,30 @@
 import {Component, OnInit} from '@angular/core';
-
-declare var $: any;
+import {LocalizeService} from '../../shared/services/localize.service';
 
 @Component({
-    selector: 'app-header',
-    templateUrl: './header.component.html',
-    styleUrls: ['./header.component.css']
+  selector: 'app-header',
+  templateUrl: './header.component.html',
+  styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
+  currentLang: string;
+  langs: { text: string, value: string }[];
 
-    isHeading = true;
-    isSubheading = true;
-    isHeadingBtn = true;
+  constructor(private localize: LocalizeService) {
 
-    constructor() {
-    }
+    this.currentLang = this.localize.getLang();
+    this.langs = this.localize.getList();
 
-    ngOnInit() {
+    this.localize.changeLang(this.currentLang);
+  }
 
-        setTimeout(() => {
+  ngOnInit() {
 
-            $('#owl-demo').owlCarousel({
-                autoPlay: 3000,
-                items: 1
-            });
+  }
 
-        }, 5000)
+  changeLang(lang: string) {
+    this.localize.changeLang(lang);
 
-    }
-
+    location.reload(true);
+  }
 }

@@ -1,33 +1,66 @@
-<mat-grid-list cols="2" rowHeight="1:1" [ngStyle.lt-md]="{'margin-top': '30px', 'margin-bottom': '30px'}">
-    <mat-grid-tile>
-        <section id="heading" class="mat-typography">
-            <div class="container">
-                <div class="heading-section" fxLayout="column" fxLayoutAlign="center center">
+<header id="header" class="header header-hide">
+  <div class="container">
 
-                    <div [class.animated]="isHeading" [class.fadeInLeft]="isHeading">
-                        <h1 [ngStyle.xs]="{'font-size': '30px'}" [ngStyle.sm]="{'font-size': '40px'}">
-                            Первая компания которая делает страхования жизни
-                        </h1>
-                    </div>
+    <div id="logo" class="pull-left">
+      <a routerLink="/home">
+        <img src="assets/img/logo.png" height="40" alt="" title=""/>
+      </a>
+    </div>
 
-                    <div [class.animated]="isSubheading" [class.fadeInRight]="isSubheading">
-                        <h2 [ngStyle.xs]="{'font-size': '15px'}" [ngStyle.sm]="{'font-size': '20px'}">
-                            Основной целью создания новой страховой компании указываются расширение и развитие бизнеса
-                            путем предоставления клиентам комплексных страховых услуг.
-                        </h2>
-                    </div>
+    <nav id="nav-menu-container">
+      <ul class="nav-menu">
+        <li routerLinkActive="menu-active">
+          <a routerLink="/home">Главная</a>
+        </li>
+        <li routerLinkActive="menu-active" class="menu-has-children">
+          <a href="javascript:void(0)">Компания</a>
+          <ul>
+            <li>
+              <a routerLink="/about">
+                О нас
+              </a>
+            </li>
+            <li>
+              <a routerLink="/leaderships">
+                Руководство
+              </a>
+            </li>
+            <li>
+              <a routerLink="/branches">
+                Наши филиалы
+              </a>
+            </li>
+            <li>
+              <a routerLink="/vacancies">
+                Вакансии
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li routerLinkActive="menu-active">
+          <a routerLink="/products">Продукты</a>
+        </li>
+        <li routerLinkActive="menu-active">
+          <a routerLink="/news">Новости</a>
+        </li>
+        <li routerLinkActive="menu-active">
+          <a routerLink="/contact">Контакты</a>
+        </li>
+        <li class="menu-has-children">
+          <a href="javascript:void(0)">
+            <img src="assets/img/flags/{{currentLang}}.png"/> {{currentLang }}
+          </a>
+          <ul>
+            <li *ngFor="let item of langs">
+              <a href="javascript:void(0)" (click)="changeLang(item.value)">
+                <img src="assets/img/flags/{{item.value}}.png"/>
+                {{item.text}}
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
 
-                    <div fxLayout="row" [class.animated]="isHeadingBtn" [class.fadeIn]="isHeadingBtn"
-                         [class.heading-btn]="isHeadingBtn">
-                        <a class="heading-button-left" href="#products" mat-flat-button color="accent">
-                            Продукты</a>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-    </mat-grid-tile>
-    <mat-grid-tile>
-        <img src="assets/img/atest.jpg"/>
-    </mat-grid-tile>
-</mat-grid-list>
+  </div>
+</header>

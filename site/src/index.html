@@ -1,20 +1,44 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Alskom | Vita</title>
-    <base href="/">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="stylesheet" href="assets/styles/loader.css"/>
+  <meta charset="utf-8"/>
+  <!-- needs to be right at the top to prevent Chrome from reloading favicon on every route change -->
+  <title>Alskom-Vita</title>
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+  <base href="/"/>
+  <link rel="icon" type="image/x-icon" href="favicon.ico"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="theme-color" content="#4e8ef7"/>
+  <link rel="manifest" href="manifest.json"/>
 
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- add to homescreen for ios -->
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="apple-mobile-web-app-status-bar-style" content="default"/>
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png"/>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Roboto:100,300,400,500,700|Philosopher:400,400i,700,700i"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/loader.css"/>
 
 </head>
-<body id="nglpage">
+<body>
+<!--[if lt IE 10]>
+<p>
+  You are using an <strong>outdated</strong> browser. Please
+  <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
+</p>
+<![endif]-->
+<noscript>
+  <p>
+    This page requires JavaScript to work properly. Please enable JavaScript in your browser.
+  </p>
+</noscript>
 <app-root>
-    <div class="loading">Страница загружается&#8230;</div>
+  <div class="loading">Page is loading</div>
 </app-root>
 </body>
 </html>
