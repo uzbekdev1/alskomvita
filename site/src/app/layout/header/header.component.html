@@ -48,10 +48,10 @@
         </li>
         <li class="menu-has-children">
           <a href="javascript:void(0)">
-            <img src="assets/img/flags/{{currentLang}}.png"/> {{currentLang }}
+            <img src="assets/img/flags/{{currentLang.value}}.png"/> {{currentLang.text}}
           </a>
           <ul>
-            <li *ngFor="let item of langs">
+            <li *ngFor="let item of langList">
               <a href="javascript:void(0)" (click)="changeLang(item.value)">
                 <img src="assets/img/flags/{{item.value}}.png"/>
                 {{item.text}}
