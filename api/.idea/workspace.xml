@@ -1,24 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0c8baf11-953e-4b6d-a285-4cf901c4ef8f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../admin/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../admin/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../site/src/app/about/about.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../site/src/app/about/about.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../site/src/app/branches/branches.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../site/src/app/branches/branches.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../site/src/app/contact/contact.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../site/src/app/contact/contact.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../site/src/app/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../site/src/app/home/home.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../site/src/app/layout/footer/footer.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../site/src/app/layout/footer/footer.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../site/src/app/layout/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../site/src/app/layout/header/header.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../site/src/app/layout/header/header.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../site/src/app/layout/header/header.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../site/src/app/leaderships/leaderships.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../site/src/app/leaderships/leaderships.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../site/src/app/news/news.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../site/src/app/news/news.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../site/src/app/products/products.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../site/src/app/products/products.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../site/src/app/vacancies/vacancies.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../site/src/app/vacancies/vacancies.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../site/src/assets/i18n/en.json" beforeDir="false" afterPath="$PROJECT_DIR$/../site/src/assets/i18n/en.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../site/src/assets/i18n/ru.json" beforeDir="false" afterPath="$PROJECT_DIR$/../site/src/assets/i18n/ru.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../site/src/assets/i18n/uz.json" beforeDir="false" afterPath="$PROJECT_DIR$/../site/src/assets/i18n/uz.json" afterDir="false" />
-    </list>
+    <list default="true" id="0c8baf11-953e-4b6d-a285-4cf901c4ef8f" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,7 +151,7 @@
       <workItem from="1567333994822" duration="821000" />
       <workItem from="1567350073237" duration="8222000" />
       <workItem from="1567387633355" duration="1210000" />
-      <workItem from="1567440325541" duration="8394000" />
+      <workItem from="1567440325541" duration="8400000" />
     </task>
     <servers />
   </component>
