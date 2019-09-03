@@ -16,7 +16,9 @@
         <div class="block-pricing">
           <div class="table">
             <h2>
-              <img [src]="baseUrl+item.image" class="img-thumbnail"/>
+              <a href="javascript:void(0)"(click)="openModal(item,template)">
+                <img [src]="baseUrl+item.image"  class="img-thumbnail"  alt="img">
+              </a>
             </h2>
             <h4>{{item.name}}</h4>
             <div class="table_btn">
@@ -37,7 +39,7 @@
     <button type="button" class="close pull-right" aria-label="Close" (click)="closeModal()">
       <span aria-hidden="true">&times;</span>
     </button>
-  </div> 
+  </div>
 
     <div class="modal-body">
 
@@ -46,11 +48,11 @@
     </div>
 
     <div class="modal-footer">
- 
+
       <button type="button" class="btn btn-secondary" (click)="closeModal()">
         {{"common.close"|translate}}
-      </button> 
+      </button>
 
     </div>
- 
+
 </ng-template>

@@ -1,6 +1,10 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
 import {LocalizeService} from './shared/services/localize.service';
 
+declare var initMenu: any;
+declare var $: any;
+declare var onCLickHeaderNav: any;
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -17,5 +21,18 @@ export class AppComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit(): void {
+
+    setTimeout(() => {
+
+      initMenu();
+
+      $('#mobile-nav a').on('click', function() {
+
+        onCLickHeaderNav($(this));
+      });
+
+    }, 1000);
+
+
   }
 }

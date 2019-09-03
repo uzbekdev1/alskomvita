@@ -33,7 +33,6 @@
               "src/assets/lib/owlcarousel/assets/owl.theme.default.min.css",
               "src/assets/lib/font-awesome/css/font-awesome.min.css",
               "src/assets/lib/animate/animate.min.css",
-              "src/assets/lib/modal-video/css/modal-video.min.css",
               "src/assets/css/style.scss",
               "src/assets/css/site.scss"
             ],
@@ -44,7 +43,6 @@
               "src/assets/lib/superfish/hoverIntent.js",
               "src/assets/lib/superfish/superfish.min.js",
               "src/assets/lib/easing/easing.min.js",
-              "src/assets/lib/modal-video/js/modal-video.js",
               "src/assets/lib/owlcarousel/owl.carousel.min.js",
               "src/assets/lib/wow/wow.min.js",
               "src/assets/js/contactform.js",

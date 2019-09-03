@@ -1,6 +1,9 @@
 import {Component, OnInit} from '@angular/core';
 import {LocalizeService} from '../../shared/services/localize.service';
 
+declare var scrollToAnchor: any;
+declare var $: any;
+
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -17,6 +20,19 @@ export class HeaderComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.loadJQuery();
+  }
+
+  loadJQuery() {
+
+    setTimeout(() => {
+
+      $('a[data-target]').on('click', function() {
+        scrollToAnchor($(this).data('target'));
+      });
+
+    }, 100);
+
   }
 
   changeLang(lang: string) {
@@ -25,4 +41,5 @@ export class HeaderComponent implements OnInit {
 
     location.reload(true);
   }
+
 }
