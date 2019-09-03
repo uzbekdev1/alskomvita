@@ -59,6 +59,12 @@ export class LocalizeService {
       localStorage.setItem('langId', data.id + '');
     });
 
+    this.app.getLanguages().subscribe(data => {
+      for (let item of data) {
+        localStorage.setItem('lang' + item.code + 'Id', item.id + '');
+      }
+    });
+
     this.translate.use(lang);
   }
 

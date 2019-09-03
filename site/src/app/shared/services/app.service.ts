@@ -32,6 +32,11 @@ export class AppService {
     return this.http.get<LanguageEntity>(this.baseUrl + '/languages/' + lang);
   }
 
+  getLanguages(): Observable<LanguageEntity[]> {
+
+    return this.http.get<LanguageEntity[]>(this.baseUrl + '/languages');
+  }
+
   getLeadership(id: number): Observable<LeadershipEntity> {
     return this.http.get<LeadershipEntity>(this.baseUrl + '/leaderships/' + id);
   }

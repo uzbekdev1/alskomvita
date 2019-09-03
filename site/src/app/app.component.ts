@@ -26,9 +26,20 @@ export class AppComponent implements OnInit, OnDestroy {
 
       initMenu();
 
-      $('#mobile-nav a').on('click', function() {
+      $('#mobile-nav a[data-target]').on('click', function() {
 
         onCLickHeaderNav($(this));
+      });
+
+      $('#mobile-nav a[data-lang]').on('click', function() {
+
+        let langCode = $(this).data('lang');
+        let langId = localStorage.getItem('lang' + langCode + 'Id');
+
+        localStorage.setItem('langId', langId);
+        localStorage.setItem('langCode', langCode);
+
+        location.reload(true);
       });
 
     }, 1000);
