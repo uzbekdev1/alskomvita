@@ -1,7 +1,8 @@
-import {Component, OnInit} from '@angular/core';
-import {environment} from '../../environments/environment';
-import {AppService} from '../shared/services/app.service';
-import {ProductEntity} from '../shared/entities/product.entity';
+import { Component, OnInit, TemplateRef, ViewChild } from '@angular/core';
+import { environment } from '../../environments/environment';
+import { AppService } from '../shared/services/app.service';
+import { ProductEntity } from '../shared/entities/product.entity';
+import { BsModalService, BsModalRef } from 'ngx-bootstrap';
 
 @Component({
   selector: 'app-products',
@@ -12,8 +13,10 @@ export class ProductsComponent implements OnInit {
 
   items: ProductEntity[];
   baseUrl = environment.adminUrl + '/upload/';
+  item: ProductEntity;
+  modalRef: BsModalRef;
 
-  constructor(private  service: AppService) {
+  constructor(private service: AppService, private modalService: BsModalService) {
   }
 
   ngOnInit() {
@@ -25,6 +28,24 @@ export class ProductsComponent implements OnInit {
       this.items = data;
     });
 
+  }
+
+  openModal(item: ProductEntity, template: TemplateRef<any>) {
+
+    this.item = item;
+
+    this.modalRef = this.modalService.show(template, {
+      keyboard: false,
+      ignoreBackdropClick: true,
+      class: 'modal-lg modal-dialog-centered'
+    });
+
+  }
+
+  closeModal() {
+    this.item = null;
+
+    this.modalRef.hide();
   }
 
 }

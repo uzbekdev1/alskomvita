@@ -32,13 +32,14 @@
     "phone": "Telefon ",
     "address": "Manzil",
     "send": "Yuborish",
-    "readMore": "Batafsil"
+    "readMore": "Batafsil",
+    "close":"Yopish",
+    "description":"Batafsil",
+    "experience":"Tajriba"
   },
   "footer": {
     "followUs": "Bizga qoshiling",
     "addressLine": "100202 Toshkent sh <br> A.Temur ko'chasi 109 uy",
     "developBy": "Veb-sayt yaratdi"
-  },
-  "header": {
-  }
+  } 
 }

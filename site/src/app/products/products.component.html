@@ -20,7 +20,7 @@
             </h2>
             <h4>{{item.name}}</h4>
             <div class="table_btn">
-              <a href="javascript:void(0)" class="btn"> {{"common.readMore"|translate}}</a>
+              <a href="javascript:void(0)" class="btn" (click)="openModal(item,template)"> {{"common.readMore"|translate}}</a>
             </div>
           </div>
         </div>
@@ -29,3 +29,28 @@
     </div>
   </div>
 </section>
+
+<ng-template #template>
+
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">{{"common.description"|translate}}</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="closeModal()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div> 
+
+    <div class="modal-body">
+
+      <div [innerHtml]="item.description" *ngIf="item"></div>
+
+    </div>
+
+    <div class="modal-footer">
+ 
+      <button type="button" class="btn btn-secondary" (click)="closeModal()">
+        {{"common.close"|translate}}
+      </button> 
+
+    </div>
+ 
+</ng-template>
