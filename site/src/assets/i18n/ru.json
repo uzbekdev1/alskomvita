@@ -32,13 +32,14 @@
     "phone": "Телефон",
     "address": "Address",
     "send": "Отправить",
-    "readMore": "Подробнее"
+    "readMore": "Подробнее",
+    "close":"Закрыть",
+    "description":"Описание",
+    "experience":"Опыт"
   },
   "footer": {
     "followUs": "Подписывайтесь на нас",
     "addressLine": "100202 г.Ташкент <br> ул.Амира Темура 109",
     "developBy": "Разработка сайта"
-  },
-  "header": {
-  }
+  } 
 }

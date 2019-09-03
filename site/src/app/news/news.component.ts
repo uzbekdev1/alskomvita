@@ -1,7 +1,8 @@
-import {Component, OnInit} from '@angular/core';
-import {environment} from '../../environments/environment';
-import {AppService} from '../shared/services/app.service';
-import {NewsEntity} from '../shared/entities/news.entity';
+import { Component, OnInit, TemplateRef } from '@angular/core';
+import { environment } from '../../environments/environment';
+import { AppService } from '../shared/services/app.service';
+import { NewsEntity } from '../shared/entities/news.entity';
+import { BsModalService, BsModalRef } from 'ngx-bootstrap';
 
 @Component({
   selector: 'app-news',
@@ -12,8 +13,10 @@ export class NewsComponent implements OnInit {
 
   items: NewsEntity[];
   baseUrl = environment.adminUrl + '/upload/';
+  item: NewsEntity;
+  modalRef: BsModalRef;
 
-  constructor(private  service: AppService) {
+  constructor(private service: AppService, private modalService: BsModalService) {
   }
 
   ngOnInit() {
@@ -26,5 +29,24 @@ export class NewsComponent implements OnInit {
     });
 
   }
+
+  openModal(item: NewsEntity, template: TemplateRef<any>) {
+
+    this.item = item;
+
+    this.modalRef = this.modalService.show(template, {
+      keyboard: false,
+      ignoreBackdropClick: true,
+      class: 'modal-lg modal-dialog-centered'
+    });
+
+  }
+
+  closeModal() {
+    this.item = null;
+
+    this.modalRef.hide();
+  }
+
 
 }

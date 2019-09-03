@@ -590,7 +590,7 @@ body.mobile-nav-active #mobile-nav-toggle i {
 #get-started {
   display: inline-block;
   height: 100%;
-  width: 100%;
+  width: 100%; 
 }
 
 #get-started .feature-block {
@@ -904,7 +904,7 @@ body.mobile-nav-active #mobile-nav-toggle i {
 }
 
 #team .team-block .team-content ul li a {
-  color: #626262;
+  color: #f18217;
 }
 
 #team .team-block .team-content ul li a .fa {
@@ -915,7 +915,16 @@ body.mobile-nav-active #mobile-nav-toggle i {
 }
 
 #team .team-block .team-content ul li a .fa:hover {
-  color: #71c55d;
+  color: #673ab7;
+}
+
+
+#team  a {
+  color: #f18217;
+}
+
+#team  a:hover {
+  color: #673ab7;
 }
 
 #team .team-block .team-content ul > span {

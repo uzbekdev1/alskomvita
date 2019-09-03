@@ -22,7 +22,9 @@
               <li><i class="fa fa-phone"></i> {{item.phone}}</li>
               <li><i class="fa fa-envelope"></i>{{item.email}}</li>
             </ul>
-            <h4>{{item.fullName}}</h4>
+            <h4>
+              <a href="javascript:void(0)"  (click)="openModal(item,template)">{{item.fullName}}</a>
+            </h4>
             <span>{{item.jobTitle}}</span>
           </div>
         </div>
@@ -31,3 +33,28 @@
     </div>
   </div>
 </section>
+
+<ng-template #template>
+
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">{{"common.experience"|translate}}</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="closeModal()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div> 
+
+    <div class="modal-body">
+
+      <div [innerHtml]="item.experience" *ngIf="item"></div>
+
+    </div>
+
+    <div class="modal-footer">
+ 
+      <button type="button" class="btn btn-secondary" (click)="closeModal()">
+        {{"common.close"|translate}}
+      </button> 
+
+    </div>
+ 
+</ng-template>

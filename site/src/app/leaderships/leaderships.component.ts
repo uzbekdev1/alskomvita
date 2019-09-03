@@ -1,7 +1,8 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, OnInit, TemplateRef} from '@angular/core';
 import {environment} from '../../environments/environment';
 import {AppService} from '../shared/services/app.service';
 import {LeadershipEntity} from '../shared/entities/leadership.entity';
+import { BsModalRef, BsModalService } from 'ngx-bootstrap';
 
 @Component({
   selector: 'app-leaderships',
@@ -13,7 +14,10 @@ export class LeadershipsComponent implements OnInit {
   items: LeadershipEntity[];
   baseUrl = environment.adminUrl + '/upload/';
 
-  constructor(private  service: AppService) {
+  item: LeadershipEntity;
+  modalRef: BsModalRef;
+
+  constructor(private service: AppService, private modalService: BsModalService) {
   }
 
   ngOnInit() {
@@ -26,4 +30,23 @@ export class LeadershipsComponent implements OnInit {
     });
 
   }
+
+  openModal(item: LeadershipEntity, template: TemplateRef<any>) {
+
+    this.item = item;
+
+    this.modalRef = this.modalService.show(template, {
+      keyboard: false,
+      ignoreBackdropClick: true,
+      class: 'modal-lg modal-dialog-centered'
+    });
+
+  }
+
+  closeModal() {
+    this.item = null;
+
+    this.modalRef.hide();
+  }
+
 }

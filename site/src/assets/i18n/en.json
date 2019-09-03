@@ -11,13 +11,13 @@
     "fullName": "Full Name"
   },
   "about": {
-    "headline": "Общество с ограниченной ответственностью Страховая Компания «ALSKOM-VITA» (далее – «Компания») создана решением Наблюдательного совета Акционерного общества Страховой Компании «ALSKOM» от 4 апреля 2019 года, учитывая перспективы развития отрасли страхования жизни в Республике Узбекистан, с целью оказания комплексных услуг по накопительному страхованию жизни, добровольному медицинскому страхованию, страхованию выезжающих за рубеж, страхование от различных заболеваний.",
-    "listTitle": "Целью Компании является:",
-    "listItem1": "обеспечение надежных страховых гарантий потребителям страховых услуг;",
-    "listItem2": "внедрение новых финансовых инструментариев, способствующие удовлетворению потребности трудоустроенных слоев населения в накоплении денежных средств в длительной перспективе и страховой защите их жизни и здоровья;",
-    "listItem3": "удовлетворение прогнозируемого роста потребности населения в страховых услугах (накопительные виды страхования жизни, добровольное медицинское страхование, страхование жизни и здоровья от несчастных случаев и др.);",
-    "listItem4": "внедрение в практику международных стандартов страхования жизни и здоровья.",
-    "footer": "Компании выдана лицензия Министерства финансов Республики Узбекистан серии SF № 243 от 29 мая 2019 года на осуществление страховой деятельности в добровольной форме по всем классам отрасли страхования жизни, а также 1 и 2 классам отрасли общего страхования. <br>Сформированный уставный капитал Компании составляет эквивалент 10,11 млрд. сум. <br> Компания предлагает качественные страховые услуги, финансовую защиту на случай непредвиденных обстоятельств, а также возможность формирования накоплений и увеличения капитала. <br> “ALSKOM-VITA” - Защитит то, что действительно дорого – Вашу жизнь, благополучие Ваших близких и Ваше будущее."
+    "headline": "ALSKOM-VITA Insurance Company Limited Liability Company (hereinafter referred to as the “Company”) was established by the decision of the Supervisory Board of the ALSKOM Insurance Company Joint Stock Company dated April 4, 2019, taking into account the development prospects of the life insurance industry in the Republic of Uzbekistan, with the aim of providing comprehensive services on cumulative life insurance, voluntary medical insurance, travel insurance, insurance against various diseases.",
+    "listTitle": "The aim of the company is:",
+    "listItem1": "providing reliable insurance guarantees to consumers of insurance services;",
+    "listItem2": "the introduction of new financial instruments that contribute to meeting the needs of the employed layers of the population in the accumulation of funds in the long term and insurance coverage of their life and health;",
+    "listItem3": "satisfaction of the projected growth of the population’s need for insurance services (cumulative types of life insurance, voluntary medical insurance, life and health insurance against accidents, etc.);",
+    "listItem4": "implementation of international life and health insurance standards.",
+    "footer": "The company was issued a license of the Ministry of Finance of the Republic of Uzbekistan of the SF series No. 243 dated May 29, 2019 to carry out voluntary insurance activities in all classes of the life insurance industry, as well as classes 1 and 2 of the general insurance industry. <br> Formed authorized capital of the Company is the equivalent of 10.11 billion soums. <br> The company offers high-quality insurance services, financial protection in case of unforeseen circumstances, as well as the possibility of the formation of savings and capital increase. <br> “ALSKOM-VITA” - Protects what is really expensive - your life, the well-being of your loved ones and your future."
   },
   "common": {
     "home": "Home",
@@ -32,13 +32,14 @@
     "phone": "Phone",
     "address": "Address",
     "send": "Send",
-    "readMore": "Read more"
+    "readMore": "Read more",
+    "close":"Close",
+    "description":"Description",
+    "experience":"Experience"
   },
   "footer": {
     "followUs": "Follow us",
     "addressLine": "100202 Tashkent r. <br> A.Timur street 109",
     "developBy": "Develop by "
-  },
-  "header": {
-  }
+  } 
 }
