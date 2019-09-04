@@ -47,5 +47,27 @@ export class ProductsComponent implements OnInit {
 
     this.modalRef.hide();
   }
+ 
+  getTitle(s: string) {
+    const str: string[] = [];
+
+    if (!s) {
+      for (let i = 0; i < 30; i++) {
+        str.push('&nbsp;');
+      }
+      return str.join('');
+    } else {
+      if (s.length > 30) {
+        return s.substr(0, 27) + '...';
+      } else {
+
+        for (let i = 0; i < 30 - s.length; i++) {
+          str.push('&nbsp;');
+        }
+
+        return s + str.join('');
+      }
+    }
+  }
 
 }

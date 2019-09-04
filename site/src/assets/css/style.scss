@@ -188,12 +188,8 @@ span {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: calc(100vh - 40px);
-  background-image: url(../img/main34.png);
+  background: url(../img/main34.png) center center no-repeat;
   background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  position: relative;
   margin-top: 40px;
 }
 
@@ -204,47 +200,30 @@ span {
 }
 
 #hero .hero-container {
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  right: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   text-align: center;
+  height: calc(100vh - 40px);
 }
 
 #hero h1 {
   margin: 0 0 10px 0;
-  font-size: 48px;
+  font-size: 40px;
   font-weight: 700;
   line-height: 56px;
   font-family: "Philosopher", sans-serif;
   color: #f18217;
 }
 
-@media (max-width: 768px) {
-  #hero h1 {
-    font-size: 28px;
-    line-height: 36px;
-  }
-}
-
 #hero h2 {
   color: #777;
   margin-bottom: 30px;
-  font-size: 20px;
-  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  line-height: 36px;
+  font-family: "Philosopher", sans-serif;
   font-weight: 300;
-}
-
-@media (max-width: 768px) {
-  #hero h2 {
-    font-size: 18px;
-    line-height: 24px;
-    margin-bottom: 30px;
-  }
 }
 
 #hero img {
@@ -270,13 +249,13 @@ span {
 }
 
 #hero .btn-get-started:hover {
-  background: #3a3c82;
-  border: 2px solid #3a3c82;
+  background: #673ab7;
+  border: 2px solid #673ab7;
   color: #fff;
 }
 
 #hero .btns a {
-  color: #673ab7;
+  color: #555;
   font-size: 11px;
   font-weight: 600;
   text-transform: uppercase;
@@ -285,14 +264,8 @@ span {
   transition: 0.3s;
 }
 
-@media (max-width: 575px) {
-  #hero .btns a {
-    margin: 4px 8px;
-  }
-}
-
 #hero .btns a:hover {
-  color: #f18217;
+  color: #673ab7;
 }
 
 /*--------------------------------------------------------------
@@ -381,14 +354,6 @@ span {
   transition: 0.3s;
 }
 
-.nav-menu li.menu-has-children li a {
-  color: #3a3c82;
-}
-
-.nav-menu li.menu-has-children li:hover > a {
-  color: #f18217;
-}
-
 .nav-menu li:hover > a, .nav-menu > .menu-active > a {
   color: #f18217;
 }
@@ -418,7 +383,7 @@ span {
 }
 
 .nav-menu ul li:hover > a {
-  color: #71c55d;
+  color: #f18217;
 }
 
 .nav-menu ul ul {
@@ -507,11 +472,11 @@ span {
 }
 
 #mobile-nav ul .menu-has-children i.fa-chevron-up {
-  color: #71c55d;
+  color: #f18217;
 }
 
 #mobile-nav ul .menu-item-active {
-  color: #71c55d;
+  color: #f18217;
 }
 
 #mobile-body-overly {
@@ -590,7 +555,7 @@ body.mobile-nav-active #mobile-nav-toggle i {
 #get-started {
   display: inline-block;
   height: 100%;
-  width: 100%; 
+  width: 100%;
 }
 
 #get-started .feature-block {
@@ -695,11 +660,6 @@ body.mobile-nav-active #mobile-nav-toggle i {
 
 /* Screenshots Section
 --------------------------------*/
-#screenshots {
-  height: calc(100vh - 40px);
-  margin-bottom: 60px;
-}
-
 .owl-dot.active > span {
   height: 10px !important;
   width: 10px !important;
@@ -712,8 +672,6 @@ body.mobile-nav-active #mobile-nav-toggle i {
 
 .owl-item img {
   cursor: pointer;
-  width: 600px;
-  height: 400px;
 }
 
 .owl-stage-outer {
@@ -866,7 +824,7 @@ body.mobile-nav-active #mobile-nav-toggle i {
 --------------------------------*/
 #team .team-block {
   box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
-  height: 254px;
+  height: 192px;
   overflow: hidden;
   position: relative;
   width: 100%;
@@ -886,13 +844,20 @@ body.mobile-nav-active #mobile-nav-toggle i {
   background: #fff none repeat scroll 0 0;
   bottom: 0;
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 rgba(0, 0, 0, 0.19);
-  //bottom: -147px;
-  bottom: -162px;
-  padding: 20px 0;
+  bottom: -147px;
   position: absolute;
   width: 100%;
   transition: all 0.5s ease-in-out 0s;
 }
+
+#team a {
+  color: #f18217;
+}
+
+#team a:hover {
+  color: #673ab7;
+}
+
 
 #team .team-block .team-content ul {
   display: block;
@@ -915,15 +880,6 @@ body.mobile-nav-active #mobile-nav-toggle i {
 }
 
 #team .team-block .team-content ul li a .fa:hover {
-  color: #673ab7;
-}
-
-
-#team  a {
-  color: #f18217;
-}
-
-#team  a:hover {
   color: #673ab7;
 }
 
@@ -1125,7 +1081,7 @@ body.mobile-nav-active #mobile-nav-toggle i {
 }
 
 #blog .block-blog .content-blog a.readmore {
-  color: #673ab7;
+  color: #f18217;
   font-size: 12px;
   font-weight: 600;
   text-decoration: none;
@@ -1135,7 +1091,7 @@ body.mobile-nav-active #mobile-nav-toggle i {
 }
 
 #blog .block-blog .content-blog a.readmore:hover {
-  color: #f18217;
+  color: #673ab7;
 }
 
 /* Newsletter Section
@@ -1207,7 +1163,7 @@ body.mobile-nav-active #mobile-nav-toggle i {
 }
 
 #newsletter ul li {
-  background: #71c55d;
+  background: #f18217;
   border-radius: 50px;
   float: left;
   height: 35px;
@@ -1219,7 +1175,7 @@ body.mobile-nav-active #mobile-nav-toggle i {
 }
 
 #newsletter ul li:hover {
-  background: #55b03f;
+  background: #673ab7;
 }
 
 #newsletter ul li .fa {
@@ -1260,7 +1216,7 @@ body.mobile-nav-active #mobile-nav-toggle i {
 #contact .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #673ab7;
+  background: #f18217;
   color: #fff;
   line-height: 1;
   padding: 6px 0 8px 0;
@@ -1334,7 +1290,6 @@ body.mobile-nav-active #mobile-nav-toggle i {
 .footer {
   background: #2a2c30;
   padding-top: 50px;
-  font-size: 18px;
 }
 
 .footer .footer-logo .navbar-brand {
@@ -1342,6 +1297,7 @@ body.mobile-nav-active #mobile-nav-toggle i {
   display: inline-block;
   float: none;
   font-family: "Philosopher", sans-serif;
+  font-size: 24px;
   font-weight: 500;
   height: 100%;
   letter-spacing: 0.2em;
