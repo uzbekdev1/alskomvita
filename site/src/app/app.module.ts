@@ -21,6 +21,7 @@ import {AppService} from './shared/services/app.service';
 import {RouterModule} from '@angular/router';
 import {HomeComponent} from './home/home.component';
 import {ModalModule} from 'ngx-bootstrap';
+import {Home2Component} from './home2/home2.component';
 
 export function localeIdFactory(localeService: LocalizeService) {
   return localeService.getLocale();
@@ -34,6 +35,7 @@ export function translateLoaderFactory(http: HttpClient) {
   declarations: [
     AppComponent,
     HomeComponent,
+    Home2Component,
     AboutComponent,
     HeaderComponent,
     NewsComponent,
@@ -51,6 +53,7 @@ export function translateLoaderFactory(http: HttpClient) {
     RouterModule.forRoot([
       {path: '', redirectTo: '/home', pathMatch: 'full'},
       {path: 'home', component: HomeComponent},
+      {path: 'home2', component: Home2Component},
       {path: '**', redirectTo: '/home'}
     ]),
     BrowserAnimationsModule,
