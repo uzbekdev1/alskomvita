@@ -12,14 +12,13 @@
   <div class="container">
     <div class="row">
 
-      <div class="col-md-6 col-lg-4" *ngFor="let item of items">
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3" *ngFor="let item of items">
         <div class="block-blog text-left">
           <a href="javascript:void(0)" (click)="openModal(item,template)">
             <img [src]="baseUrl+item.image" alt="img">
           </a>
           <div class="content-blog">
-            <h4> {{item.title}}
-            </h4>
+            <h4 [innerHTML]="getTitle(item.title)"></h4>
             <span>{{item.date|date:'shortDate'}}</span>
             <a class="pull-right readmore" href="javascript:void(0)"
                (click)="openModal(item,template)">{{"common.readMore"|translate}}</a>

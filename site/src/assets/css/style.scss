@@ -187,11 +187,9 @@ span {
 # Hero Section
 --------------------------------------------------------------*/
 #hero {
-  width: 100%;
-  height: calc(100vh - 40px);
+  width: 100%; 
   background: url(../img/main34.png) center center no-repeat;
-  background-size: 100%;
-  position: relative;
+  background-size: cover;
   margin-top: 40px;
 }
 
@@ -202,177 +200,30 @@ span {
 }
 
 #hero .hero-container {
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  right: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   text-align: center;
-}
-
-//ipod/ipod pro
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
-  #hero .hero-container {
-    left: unset !important;
-  }
-}
-
-@media (max-width: 768px) {
-  #hero .hero-container {
-    left: 0px;
-  }
+  height: calc(100vh - 40px);
 }
 
 #hero h1 {
   margin: 0 0 10px 0;
-  font-size: 48px;
+  font-size: 40px;
   font-weight: 700;
   line-height: 56px;
   font-family: "Philosopher", sans-serif;
   color: #f18217;
 }
-
-#hero h1 {
-  font-size: 25px;
-  line-height: 25px;
-  position: absolute;
-  top: 80px;
-}
-
-//iphone 5/5s
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
-  #hero h1 {
-    font-size: 20px;
-    line-height: 25px;
-    position: absolute;
-    top: 80px;
-  }
-}
-
-//galaxy s5
-@media only screen and (min-device-width: 360px) and (max-device-width: 640px) and (-webkit-min-device-pixel-ratio: 3) {
-  #hero h1 {
-    font-size: 20px;
-    line-height: 25px;
-    position: absolute;
-    top: 80px;
-  }
-}
-
-//iphone 6/6s
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
-  #hero h1 {
-    font-size: 22px;
-    line-height: 25px;
-    position: absolute;
-    top: 100px;
-  }
-}
-
-//iphone 6/6s plus
-@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
-  #hero h1 {
-    font-size: 25px;
-    line-height: 25px;
-    position: absolute;
-    top: 100px;
-  }
-}
-
-//iphone x
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
-  #hero h1 {
-    font-size: 25px;
-    line-height: 25px;
-    position: absolute;
-    top: 120px;
-  }
-}
-
-//ipod/ipod pro
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
-  #hero h1 {
-    position: relative;
-    top: -20px;
-  }
-}
-
+ 
 #hero h2 {
   color: #777;
   margin-bottom: 30px;
-  font-size: 20px;
+  font-size: 24px; 
+  line-height: 36px;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
-}
-
-
-//iphone 5/5s
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
-  #hero h2 {
-    font-size: 18px;
-    line-height: 24px;
-    margin-bottom: 30px;
-    position: absolute;
-    top: 180px;
-  }
-}
-
-//galaxy s5
-@media only screen and (min-device-width: 360px) and (max-device-width: 640px) and (-webkit-min-device-pixel-ratio: 3) {
-  #hero h2 {
-    font-size: 18px;
-    line-height: 24px;
-    margin-bottom: 30px;
-    position: absolute;
-    top: 220px;
-  }
-}
-
-//iphone 6/6s
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
-  #hero h2 {
-    font-size: 18px;
-    line-height: 24px;
-    margin-bottom: 30px;
-    position: absolute;
-    top: 250px;
-  }
-}
-
-//iphone 6/6s plus
-@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
-  #hero h2 {
-    font-size: 18px;
-    line-height: 24px;
-    margin-bottom: 30px;
-    position: absolute;
-    top: 300px;
-  }
-}
-
-//iphone x
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
-  #hero h2 {
-    font-size: 18px;
-    line-height: 24px;
-    margin-bottom: 30px;
-    position: absolute;
-    top: 330px;
-  }
-}
-
-//ipod/ipod pro
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 3) {
-  #hero h2 {
-    font-size: 18px;
-    line-height: 24px;
-    margin-bottom: 30px;
-    position: absolute;
-    top: 330px;
-  }
 }
 
 #hero img {
@@ -397,19 +248,6 @@ span {
   text-decoration: none;
 }
 
-//ipod
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
-  #hero .btn-get-started {
-    margin-top: unset !important;
-  }
-}
-
-@media (max-width: 768px) {
-  #hero .btn-get-started {
-    margin-top: 400px;
-  }
-}
-
 #hero .btn-get-started:hover {
   background: #673ab7;
   border: 2px solid #673ab7;
@@ -425,13 +263,7 @@ span {
   text-decoration: none;
   transition: 0.3s;
 }
-
-@media (max-width: 575px) {
-  #hero .btns a {
-    margin: 4px 8px;
-  }
-}
-
+ 
 #hero .btns a:hover {
   color: #673ab7;
 }
@@ -992,7 +824,7 @@ body.mobile-nav-active #mobile-nav-toggle i {
 --------------------------------*/
 #team .team-block {
   box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
-  height: 254px;
+  height: 192px;
   overflow: hidden;
   position: relative;
   width: 100%;
@@ -1012,9 +844,7 @@ body.mobile-nav-active #mobile-nav-toggle i {
   background: #fff none repeat scroll 0 0;
   bottom: 0;
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 rgba(0, 0, 0, 0.19);
-  //bottom: -147px;
-  bottom: -165px;
-  padding: 20px 0;
+  bottom: -147px;
   position: absolute;
   width: 100%;
   transition: all 0.5s ease-in-out 0s;
