@@ -4,9 +4,7 @@
     <list default="true" id="7714992d-7465-45b3-bb62-6df3ed229eed" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../api/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../api/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../site/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../site/src/app/app.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../site/src/app/shared/services/app.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../site/src/app/shared/services/app.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../site/src/app/shared/services/localize.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../site/src/app/shared/services/localize.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../site/src/assets/css/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../site/src/assets/css/style.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

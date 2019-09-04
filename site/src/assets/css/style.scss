@@ -213,6 +213,13 @@ span {
   text-align: center;
 }
 
+//ipod/ipod pro
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+  #hero .hero-container {
+    left: unset !important;
+  }
+}
+
 @media (max-width: 768px) {
   #hero .hero-container {
     left: 0px;
@@ -228,12 +235,68 @@ span {
   color: #f18217;
 }
 
-@media (max-width: 768px) {
+#hero h1 {
+  font-size: 25px;
+  line-height: 25px;
+  position: absolute;
+  top: 80px;
+}
+
+//iphone 5/5s
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  #hero h1 {
+    font-size: 20px;
+    line-height: 25px;
+    position: absolute;
+    top: 80px;
+  }
+}
+
+//galaxy s5
+@media only screen and (min-device-width: 360px) and (max-device-width: 640px) and (-webkit-min-device-pixel-ratio: 3) {
+  #hero h1 {
+    font-size: 20px;
+    line-height: 25px;
+    position: absolute;
+    top: 80px;
+  }
+}
+
+//iphone 6/6s
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+  #hero h1 {
+    font-size: 22px;
+    line-height: 25px;
+    position: absolute;
+    top: 100px;
+  }
+}
+
+//iphone 6/6s plus
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
   #hero h1 {
     font-size: 25px;
     line-height: 25px;
     position: absolute;
-    top: 150px;
+    top: 100px;
+  }
+}
+
+//iphone x
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+  #hero h1 {
+    font-size: 25px;
+    line-height: 25px;
+    position: absolute;
+    top: 120px;
+  }
+}
+
+//ipod/ipod pro
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+  #hero h1 {
+    position: relative;
+    top: -20px;
   }
 }
 
@@ -245,13 +308,70 @@ span {
   font-weight: 300;
 }
 
-@media (max-width: 768px) {
+
+//iphone 5/5s
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  #hero h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+    position: absolute;
+    top: 180px;
+  }
+}
+
+//galaxy s5
+@media only screen and (min-device-width: 360px) and (max-device-width: 640px) and (-webkit-min-device-pixel-ratio: 3) {
+  #hero h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+    position: absolute;
+    top: 220px;
+  }
+}
+
+//iphone 6/6s
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+  #hero h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+    position: absolute;
+    top: 250px;
+  }
+}
+
+//iphone 6/6s plus
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
   #hero h2 {
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 30px;
     position: absolute;
     top: 300px;
+  }
+}
+
+//iphone x
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+  #hero h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+    position: absolute;
+    top: 330px;
+  }
+}
+
+//ipod/ipod pro
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 3) {
+  #hero h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+    position: absolute;
+    top: 330px;
   }
 }
 
@@ -275,6 +395,13 @@ span {
   background: #fff;
   color: #f18217;
   text-decoration: none;
+}
+
+//ipod
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+  #hero .btn-get-started {
+    margin-top: unset !important;
+  }
 }
 
 @media (max-width: 768px) {
