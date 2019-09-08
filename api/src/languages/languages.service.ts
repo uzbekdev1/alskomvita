@@ -18,7 +18,7 @@ export class LanguagesService {
 
   getItem(code: string) {
     return this.languageRepository.findOne({
-      code: code,
+      code,
     });
   }
 

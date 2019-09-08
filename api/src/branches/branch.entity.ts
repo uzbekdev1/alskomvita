@@ -1,6 +1,6 @@
-import { Column, Entity, PrimaryGeneratedColumn } from "typeorm";
+import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 
-@Entity("branches")
+@Entity('branches')
 export class BranchEntity {
 
   @PrimaryGeneratedColumn()
@@ -9,13 +9,13 @@ export class BranchEntity {
   @Column({ length: 50 })
   name: string;
 
-  @Column({ type: "text" })
+  @Column({ type: 'text' })
   contact: string;
 
   @Column({ length: 250 })
   image: string;
 
-  @Column({ name: "language_id", nullable: true })
+  @Column({ name: 'language_id', nullable: true })
   languageId: number;
 
 }

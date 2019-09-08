@@ -33,13 +33,14 @@
     "address": "Manzil",
     "send": "Yuborish",
     "readMore": "Batafsil",
-    "close":"Yopish",
-    "description":"Batafsil",
-    "experience":"Tajriba"
+    "close": "Yopish",
+    "description": "Batafsil",
+    "experience": "Tajriba",
+    "partners": "Hamkorimiz"
   },
   "footer": {
     "followUs": "Bizga qoshiling",
     "addressLine": "100202 Toshkent sh <br> A.Temur ko'chasi 109 uy",
     "developBy": "Veb-sayt yaratdi"
-  } 
+  }
 }

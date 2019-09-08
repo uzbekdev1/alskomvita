@@ -1,9 +1,9 @@
 {
   "type": "postgres",
-  "host": "localhost",
+  "host": "178.33.123.109",
   "port": 5432,
   "username": "postgres",
-  "password": "12345",
+  "password": "web@1234",
   "database": "alskom",
   "entities": [
     "dist/**/*.entity.js"

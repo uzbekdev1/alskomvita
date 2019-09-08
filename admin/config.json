@@ -1,8 +1,10 @@
 {
 	"pg": {
+		"host": "178.33.123.109",
+		"port": 5432,
 		"database": "alskom",
 		"user": "postgres",
-		"password": "12345",
+		"password": "web@1234",
 		"schema": "public"
 	},
 	"server": {

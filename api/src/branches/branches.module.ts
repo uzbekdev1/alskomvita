@@ -1,19 +1,19 @@
-import { Module } from "@nestjs/common";
-import { BranchesController } from "./branches.controller";
-import { BranchesService } from "./branches.service";
-import { TypeOrmModule } from "@nestjs/typeorm";
-import { BranchEntity } from "./branch.entity";
+import { Module } from '@nestjs/common';
+import { BranchesController } from './branches.controller';
+import { BranchesService } from './branches.service';
+import { TypeOrmModule } from '@nestjs/typeorm';
+import { BranchEntity } from './branch.entity';
 
 @Module({
   imports: [
-    TypeOrmModule.forFeature([BranchEntity])
+    TypeOrmModule.forFeature([BranchEntity]),
   ],
   controllers: [
-    BranchesController
+    BranchesController,
   ],
   providers: [
-    BranchesService
-  ]
+    BranchesService,
+  ],
 })
 export class BranchesModule {
 }

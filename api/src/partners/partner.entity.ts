@@ -1,19 +1,16 @@
 import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 
-@Entity('products')
-export class ProductEntity {
+@Entity('partners')
+export class PartnerEntity {
 
   @PrimaryGeneratedColumn()
   id: number;
 
   @Column({ length: 250 })
-  name: string;
+  title: string;
 
   @Column({ type: 'text' })
   description: string;
-
-  @Column({ type: 'boolean', name: 'is_active' })
-  isActive: boolean;
 
   @Column({ length: 250 })
   image: string;

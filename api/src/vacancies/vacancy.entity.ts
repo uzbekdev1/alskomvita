@@ -1,6 +1,6 @@
-import { Column, Entity, PrimaryGeneratedColumn } from "typeorm";
+import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 
-@Entity("vacancies")
+@Entity('vacancies')
 export class VacancyEntity {
 
   @PrimaryGeneratedColumn()
@@ -12,13 +12,13 @@ export class VacancyEntity {
   @Column({ length: 120, nullable: true })
   department: string;
 
-  @Column({ type: "text" })
+  @Column({ type: 'text' })
   requirements: string;
 
-  @Column({ name: "branch_id", nullable: true })
+  @Column({ name: 'branch_id', nullable: true })
   branchId: number;
 
-  @Column({ name: "language_id", nullable: true })
+  @Column({ name: 'language_id', nullable: true })
   languageId: number;
 
 }

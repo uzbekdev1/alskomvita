@@ -35,11 +35,12 @@
     "readMore": "Read more",
     "close":"Close",
     "description":"Description",
-    "experience":"Experience"
+    "experience":"Experience",
+    "partners": "Partners"
   },
   "footer": {
     "followUs": "Follow us",
     "addressLine": "100202 Tashkent r. <br> A.Timur street 109",
     "developBy": "Develop by "
-  } 
+  }
 }

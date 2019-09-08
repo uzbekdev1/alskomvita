@@ -6,10 +6,10 @@ import { ApiImplicitParam, ApiUseTags } from '@nestjs/swagger';
 
 @ApiUseTags('products')
 @Controller('products')
-//@ApiBearerAuth()
+// @ApiBearerAuth()
 export class ProductsController {
 
-  constructor(private   productsService: ProductsService) {
+  constructor(private  productsService: ProductsService) {
   }
 
   @Get(':lang')

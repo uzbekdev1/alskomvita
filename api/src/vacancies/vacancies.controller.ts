@@ -6,7 +6,7 @@ import { ApiImplicitParam, ApiUseTags } from '@nestjs/swagger';
 
 @ApiUseTags('vacancies')
 @Controller('vacancies')
-//@ApiBearerAuth()
+// @ApiBearerAuth()
 export class VacanciesController {
   constructor(private vacanciesService: VacanciesService) {
   }

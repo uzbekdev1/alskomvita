@@ -6,10 +6,10 @@ import { ApiImplicitParam, ApiUseTags } from '@nestjs/swagger';
 
 @ApiUseTags('branches')
 @Controller('branches')
-//@ApiBearerAuth()
+// @ApiBearerAuth()
 export class BranchesController {
 
-  constructor(private   branchesService: BranchesService) {
+  constructor(private branchesService: BranchesService) {
   }
 
   @Get(':lang')

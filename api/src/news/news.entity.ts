@@ -1,6 +1,6 @@
 import {Column, Entity, PrimaryGeneratedColumn} from 'typeorm';
 
-@Entity("news")
+@Entity('news')
 export class NewsEntity {
 
     @PrimaryGeneratedColumn()
@@ -9,19 +9,19 @@ export class NewsEntity {
     @Column({length: 250})
     title: string;
 
-    @Column({type: "date"})
+    @Column({type: 'date'})
     date: Date;
 
-    @Column({type: "text"})
+    @Column({type: 'text'})
     description: string;
 
-    @Column({type: "boolean", name: "is_published"})
+    @Column({type: 'boolean', name: 'is_published'})
     isPublished: boolean;
 
     @Column({length: 250})
     image: string;
 
-    @Column({ name: "language_id", nullable: true })
+    @Column({ name: 'language_id', nullable: true })
     languageId: number;
 
 }
