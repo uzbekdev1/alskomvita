@@ -36,14 +36,14 @@ export class AppService {
     return this.http.get<LeadershipEntity>(this.baseUrl + '/leaderships/' + id);
   }
 
-  getLanguages(): Observable<LanguageEntity[]> {
+  getLanguages(): Promise<LanguageEntity[]> {
 
-    return this.http.get<LanguageEntity[]>(this.baseUrl + '/languages');
+    return this.http.get<LanguageEntity[]>(this.baseUrl + '/languages').toPromise();
   }
 
-  getLanguage(lang: string): Observable<LanguageEntity> {
+  getLanguage(lang: string): Promise<LanguageEntity> {
 
-    return this.http.get<LanguageEntity>(this.baseUrl + '/languages/' + lang);
+    return this.http.get<LanguageEntity>(this.baseUrl + '/languages/' + lang).toPromise();
   }
 
   getNews(): Observable<NewsEntity[]> {
