@@ -1,4 +1,88 @@
 {
+    "languages": {
+        "slug": "Languages",
+        "table": {
+            "name": "languages",
+            "pk": "id",
+            "verbose": "Languages"
+        },
+        "columns": [
+            {
+                "name": "id",
+                "verbose": "#",
+                "control": {
+                    "text": true
+                },
+                "type": "integer",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": false
+                },
+                "editview": {
+                    "show": false
+                }
+            },
+            {
+                "name": "name",
+                "verbose": "Name",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(50)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "code",
+                "verbose": "Code",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(50)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "locale",
+                "verbose": "Locale",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(50)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            }
+        ],
+        "mainview": {
+            "show": true
+        },
+        "listview": {
+            "order": {},
+            "page": 25
+        },
+        "editview": {
+            "readonly": false
+        }
+    },
     "vacancies": {
         "slug": "Vacancies",
         "table": {
@@ -698,12 +782,12 @@
             "readonly": false
         }
     },
-    "languages": {
-        "slug": "Languages",
+    "partners": {
+        "slug": "Partners",
         "table": {
-            "name": "languages",
+            "name": "partners",
             "pk": "id",
-            "verbose": "Languages"
+            "verbose": "Partners"
         },
         "columns": [
             {
@@ -723,12 +807,12 @@
                 }
             },
             {
-                "name": "name",
-                "verbose": "Name",
+                "name": "title",
+                "verbose": "Title",
                 "control": {
                     "text": true
                 },
-                "type": "varchar(50)",
+                "type": "varchar(250)",
                 "allowNull": false,
                 "defaultValue": null,
                 "listview": {
@@ -739,12 +823,12 @@
                 }
             },
             {
-                "name": "code",
-                "verbose": "Code",
+                "name": "description",
+                "verbose": "Description",
                 "control": {
                     "text": true
                 },
-                "type": "varchar(50)",
+                "type": "text",
                 "allowNull": false,
                 "defaultValue": null,
                 "listview": {
@@ -755,84 +839,39 @@
                 }
             },
             {
-                "name": "locale",
-                "verbose": "Locale",
+                "name": "image",
+                "verbose": "Image",
                 "control": {
-                    "text": true
+                    "file": true
                 },
-                "type": "varchar(50)",
+                "type": "varchar(250)",
                 "allowNull": false,
                 "defaultValue": null,
                 "listview": {
-                    "show": true
+                    "show": false
                 },
                 "editview": {
                     "show": true
                 }
-            }
-        ],
-        "mainview": {
-            "show": true
-        },
-        "listview": {
-            "order": {},
-            "page": 25
-        },
-        "editview": {
-            "readonly": false
-        }
-    },
-    "agent": {
-        "slug": "agent",
-        "table": {
-            "name": "agent",
-            "pk": "id",
-            "verbose": "agent"
-        },
-        "columns": [
+            },
             {
-                "name": "id",
-                "verbose": "id",
+                "name": "language_id",
+                "verbose": "Language",
                 "control": {
-                    "text": true
+                    "select": true
+                },
+                "oneToMany": {
+                    "table": "languages",
+                    "pk": "id",
+                    "columns": [
+                        "name"
+                    ]
                 },
                 "type": "integer",
-                "allowNull": false,
+                "allowNull": true,
                 "defaultValue": null,
                 "listview": {
-                    "show": true
-                },
-                "editview": {
-                    "show": true
-                }
-            },
-            {
-                "name": "fullName",
-                "verbose": "fullName",
-                "control": {
-                    "text": true
-                },
-                "type": "varchar(50)",
-                "allowNull": false,
-                "defaultValue": null,
-                "listview": {
-                    "show": true
-                },
-                "editview": {
-                    "show": true
-                }
-            },
-            {
-                "name": "phone",
-                "verbose": "phone",
-                "control": {
-                    "text": true
-                },
-                "type": "varchar(null)",
-                "allowNull": false,
-                "defaultValue": null,
-                "listview": {
-                    "show": true
+                    "show": false
                 },
                 "editview": {
                     "show": true

@@ -9,7 +9,7 @@ export class BranchesService {
 
   constructor(
     @InjectRepository(BranchEntity)
-    private  branchRepository: Repository<BranchEntity>) {
+    private branchRepository: Repository<BranchEntity>) {
   }
 
   getAll(lang: number): Observable<BranchEntity[]> {

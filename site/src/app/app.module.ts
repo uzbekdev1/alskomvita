@@ -22,6 +22,7 @@ import {RouterModule} from '@angular/router';
 import {HomeComponent} from './home/home.component';
 import {ModalModule} from 'ngx-bootstrap';
 import {Home2Component} from './home2/home2.component';
+import {PartnersComponent} from './partners/partners.component';
 
 export function localeIdFactory(localeService: LocalizeService) {
   return localeService.getLocale();
@@ -44,7 +45,8 @@ export function translateLoaderFactory(http: HttpClient) {
     FooterComponent,
     LeadershipsComponent,
     ProductsComponent,
-    VacanciesComponent
+    VacanciesComponent,
+    PartnersComponent
   ],
   imports: [
     BrowserModule,

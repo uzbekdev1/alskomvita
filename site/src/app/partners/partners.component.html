@@ -1,0 +1,28 @@
+<section id="partners" class="padd-section wow fadeInUp">
+
+  <div class="container">
+    <div class="section-title text-center">
+
+      <h2>{{"common.partners"|translate}}</h2>
+      <p class="separator"></p>
+
+    </div>
+  </div>
+
+  <div class="container">
+
+    <div class="owl-carousel">
+
+      <div class="item" *ngFor="let item of items">
+        <h4>
+        </h4>
+        <img [src]="baseUrl+item.image"  width="225" height="225"  alt="img">
+        <p [innerHTML]="item.title">
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+

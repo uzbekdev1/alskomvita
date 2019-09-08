@@ -8,7 +8,7 @@ import { from, Observable } from 'rxjs';
 export class ProductsService {
   constructor(
     @InjectRepository(ProductEntity)
-    private   postRepository: Repository<ProductEntity>,
+    private postRepository: Repository<ProductEntity>,
   ) {
   }
 
