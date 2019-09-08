@@ -11,14 +11,12 @@
 
   <div class="container">
 
-    <div class="owl-carousel">
+    <div class="row">
 
-      <div class="item" *ngFor="let item of items">
-        <h4>
-        </h4>
+      <div class="col-md-6 col-md-4 col-lg-3" *ngFor="let item of items">
         <img [src]="baseUrl+item.image"  width="225" height="225"  alt="img">
-        <p [innerHTML]="item.title">
-        </p>
+        <h4 [innerHTML]="item.title">
+        </h4>
       </div>
 
     </div>
