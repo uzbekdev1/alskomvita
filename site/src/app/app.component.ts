@@ -33,8 +33,8 @@ export class AppComponent implements OnInit, OnDestroy {
 
       $('#mobile-nav a[data-lang]').on('click', function() {
 
-        let langCode = $(this).data('lang');
-        let langId = localStorage.getItem('lang' + langCode + 'Id');
+        const langCode = $(this).data('lang');
+        const langId = localStorage.getItem('lang' + langCode + 'Id');
 
         localStorage.setItem('langId', langId);
         localStorage.setItem('langCode', langCode);

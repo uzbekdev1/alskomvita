@@ -7,10 +7,7 @@ export class PartnerEntity {
   id: number;
 
   @Column({ length: 250 })
-  title: string;
-
-  @Column({ type: 'text' })
-  description: string;
+  name: string;
 
   @Column({ length: 250 })
   image: string;

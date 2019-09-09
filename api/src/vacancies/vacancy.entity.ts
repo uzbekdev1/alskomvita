@@ -15,10 +15,9 @@ export class VacancyEntity {
   @Column({ type: 'text' })
   requirements: string;
 
-  @Column({ name: 'branch_id', nullable: true })
-  branchId: number;
-
   @Column({ name: 'language_id', nullable: true })
   languageId: number;
 
+  @Column({ name: 'is_visible', nullable: true, type: 'boolean' })
+  isVisible: boolean;
 }

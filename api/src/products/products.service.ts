@@ -15,6 +15,7 @@ export class ProductsService {
   getAll(lang: number): Observable<ProductEntity[]> {
     return from(this.postRepository.find({
       languageId: lang,
+      isActive: true,
     }));
   }
 

@@ -36,7 +36,8 @@
     "close": "Закрыть",
     "description": "Описание",
     "experience": "Опыт",
-    "partners": "Партнеры"
+    "partners": "Партнеры",
+    "order":"Заказать"
   },
   "footer": {
     "followUs": "Подписывайтесь на нас",

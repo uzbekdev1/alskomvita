@@ -4,6 +4,9 @@ import { AppService } from '../shared/services/app.service';
 import { ProductEntity } from '../shared/entities/product.entity';
 import { BsModalService, BsModalRef } from 'ngx-bootstrap';
 
+declare var $: any;
+declare var onCLickHeaderNav: any;
+
 @Component({
   selector: 'app-products',
   templateUrl: './products.component.html',
@@ -47,7 +50,15 @@ export class ProductsComponent implements OnInit {
 
     this.modalRef.hide();
   }
- 
+
+  orderNow(e) {
+    this.item = null;
+
+    this.modalRef.hide();
+
+    onCLickHeaderNav($(e.target));
+  }
+
   getTitle(s: string) {
     const str: string[] = [];
 

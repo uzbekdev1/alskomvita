@@ -11,7 +11,6 @@ import {AboutComponent} from './about/about.component';
 import {HeaderComponent} from './layout/header/header.component';
 import {ContactComponent} from './contact/contact.component';
 import {NewsComponent} from './news/news.component';
-import {BranchesComponent} from './branches/branches.component';
 import {FooterComponent} from './layout/footer/footer.component';
 import {VacanciesComponent} from './vacancies/vacancies.component';
 import {ProductsComponent} from './products/products.component';
@@ -21,7 +20,6 @@ import {AppService} from './shared/services/app.service';
 import {RouterModule} from '@angular/router';
 import {HomeComponent} from './home/home.component';
 import {ModalModule} from 'ngx-bootstrap';
-import {Home2Component} from './home2/home2.component';
 import {PartnersComponent} from './partners/partners.component';
 
 export function localeIdFactory(localeService: LocalizeService) {
@@ -36,12 +34,10 @@ export function translateLoaderFactory(http: HttpClient) {
   declarations: [
     AppComponent,
     HomeComponent,
-    Home2Component,
     AboutComponent,
     HeaderComponent,
     NewsComponent,
     ContactComponent,
-    BranchesComponent,
     FooterComponent,
     LeadershipsComponent,
     ProductsComponent,
@@ -55,7 +51,6 @@ export function translateLoaderFactory(http: HttpClient) {
     RouterModule.forRoot([
       {path: '', redirectTo: '/home', pathMatch: 'full'},
       {path: 'home', component: HomeComponent},
-      {path: 'home2', component: Home2Component},
       {path: '**', redirectTo: '/home'}
     ]),
     BrowserAnimationsModule,

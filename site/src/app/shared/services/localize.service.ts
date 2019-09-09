@@ -17,7 +17,7 @@ export class LocalizeService {
   langPattern = new RegExp(/en|ru|uz/);
 
   constructor(private translate: TranslateService,
-    private app: AppService) {
+              private app: AppService) {
     this.translate.addLangs(['en', 'ru', 'uz']);
 
     const browserLang = this.translate.getBrowserLang();

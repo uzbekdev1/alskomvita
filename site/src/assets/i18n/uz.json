@@ -36,7 +36,8 @@
     "close": "Yopish",
     "description": "Batafsil",
     "experience": "Tajriba",
-    "partners": "Hamkorimiz"
+    "partners": "Hamkorimiz",
+    "order":"Buyurtma berish"
   },
   "footer": {
     "followUs": "Bizga qoshiling",

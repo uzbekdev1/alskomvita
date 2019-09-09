@@ -6,7 +6,6 @@ import { environment } from '../../../environments/environment';
 import { LeadershipEntity } from '../entities/leadership.entity';
 import { ProductEntity } from '../entities/product.entity';
 import { VacancyEntity } from '../entities/vacancy.entity';
-import { BranchEntity } from '../entities/branch.entity';
 import { LanguageEntity } from '../entities/language.entity';
 import { PartnerEntity } from '../entities/partner.entity';
 
@@ -18,14 +17,6 @@ export class AppService {
 
   constructor(private http: HttpClient) {
     this.langId = +localStorage.getItem('langId') || 1;
-  }
-
-  getBranches(): Observable<BranchEntity[]> {
-    return this.http.get<BranchEntity[]>(this.baseUrl + '/branches/' + this.langId);
-  }
-
-  getBranch(id: number): Observable<BranchEntity> {
-    return this.http.get<BranchEntity>(this.baseUrl + '/branches/' + id);
   }
 
   getLeaderships(): Observable<LeadershipEntity[]> {

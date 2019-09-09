@@ -15,6 +15,7 @@ export class NewsService {
   getAll(lang: number): Observable<NewsEntity[]> {
     return from(this.vacancyRepository.find({
       languageId: lang,
+      isPublished: true
     }));
   }
 

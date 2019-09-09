@@ -36,7 +36,8 @@
     "close":"Close",
     "description":"Description",
     "experience":"Experience",
-    "partners": "Partners"
+    "partners": "Partners",
+    "order":"Order"
   },
   "footer": {
     "followUs": "Follow us",

@@ -14,16 +14,13 @@
 
       <div class="col-md-6 col-md-4 col-lg-3" *ngFor="let item of items">
         <div class="team-block bottom">
-          <img
-            [src]="baseUrl+item.image"
-            class="img-responsive" alt="img">
+          <img [src]="baseUrl+item.image" class="img-responsive" alt="img">
           <div class="team-content">
             <ul class="list-unstyled">
-              <li><i class="fa fa-phone"></i> {{item.phone}}</li>
-              <li><i class="fa fa-envelope"></i>{{item.email}}</li>
+              <li></li>
             </ul>
             <h4>
-              <a href="javascript:void(0)"  (click)="openModal(item,template)">{{item.fullName}}</a>
+              <a href="javascript:void(0)" (click)="openModal(item,template)">{{item.fullName}}</a>
             </h4>
             <span>{{item.jobTitle}}</span>
           </div>
@@ -43,18 +40,18 @@
     </button>
   </div>
 
-    <div class="modal-body">
+  <div class="modal-body">
 
-      <div [innerHtml]="item.experience" *ngIf="item"></div>
+    <div [innerHtml]="item.information" *ngIf="item"></div>
 
-    </div>
+  </div>
 
-    <div class="modal-footer">
+  <div class="modal-footer">
 
-      <button type="button" class="btn btn-secondary" (click)="closeModal()">
-        {{"common.close"|translate}}
-      </button>
+    <button type="button" class="btn btn-secondary" (click)="closeModal()">
+      {{"common.close"|translate}}
+    </button>
 
-    </div>
+  </div>
 
 </ng-template>
