@@ -167,7 +167,7 @@ function onCLickHeaderNav(e) {
 }
 
 function scrollToAnchor(location) {
-  const element = document.querySelector(location);
+  var element = document.querySelector(location);
 
   if (element) {
     setTimeout(() => {
