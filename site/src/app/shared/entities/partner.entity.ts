@@ -2,8 +2,7 @@
 export class PartnerEntity {
 
   id: number;
-  title: string;
-  description: string;
+  name: string;
   image: string;
   languageId: number;
 

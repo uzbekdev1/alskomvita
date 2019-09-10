@@ -39,7 +39,11 @@ export class HeaderComponent implements OnInit {
 
     this.localize.changeLang(lang);
 
-    location.reload(true);
+    setTimeout(() => {
+
+      location.reload(true);
+
+    }, 1000);
   }
 
 }

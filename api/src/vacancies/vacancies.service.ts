@@ -15,6 +15,7 @@ export class VacanciesService {
   getAll(lang: number): Observable<VacancyEntity[]> {
     return from(this.vacancyRepository.find({
       languageId: lang,
+      isVisible: true
     }));
   }
 

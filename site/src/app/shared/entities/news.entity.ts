@@ -4,7 +4,7 @@ export class NewsEntity {
     title: string;
     date: Date;
     description: string;
-    isPublished: boolean;
     image: string;
+    isPublished: boolean;
 
 }

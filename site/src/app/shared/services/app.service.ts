@@ -6,7 +6,6 @@ import { environment } from '../../../environments/environment';
 import { LeadershipEntity } from '../entities/leadership.entity';
 import { ProductEntity } from '../entities/product.entity';
 import { VacancyEntity } from '../entities/vacancy.entity';
-import { BranchEntity } from '../entities/branch.entity';
 import { LanguageEntity } from '../entities/language.entity';
 import { PartnerEntity } from '../entities/partner.entity';
 
@@ -20,14 +19,6 @@ export class AppService {
     this.langId = +localStorage.getItem('langId') || 1;
   }
 
-  getBranches(): Observable<BranchEntity[]> {
-    return this.http.get<BranchEntity[]>(this.baseUrl + '/branches/' + this.langId);
-  }
-
-  getBranch(id: number): Observable<BranchEntity> {
-    return this.http.get<BranchEntity>(this.baseUrl + '/branches/' + id);
-  }
-
   getLeaderships(): Observable<LeadershipEntity[]> {
     return this.http.get<LeadershipEntity[]>(this.baseUrl + '/leaderships/' + this.langId);
   }
@@ -36,14 +27,14 @@ export class AppService {
     return this.http.get<LeadershipEntity>(this.baseUrl + '/leaderships/' + id);
   }
 
-  getLanguages(): Observable<LanguageEntity[]> {
+  getLanguages(): Promise<LanguageEntity[]> {
 
-    return this.http.get<LanguageEntity[]>(this.baseUrl + '/languages');
+    return this.http.get<LanguageEntity[]>(this.baseUrl + '/languages').toPromise();
   }
 
-  getLanguage(lang: string): Observable<LanguageEntity> {
+  getLanguage(lang: string): Promise<LanguageEntity> {
 
-    return this.http.get<LanguageEntity>(this.baseUrl + '/languages/' + lang);
+    return this.http.get<LanguageEntity>(this.baseUrl + '/languages/' + lang).toPromise();
   }
 
   getNews(): Observable<NewsEntity[]> {

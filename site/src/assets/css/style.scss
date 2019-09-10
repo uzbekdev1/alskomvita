@@ -8,7 +8,12 @@ body {
   color: #212529;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
 }
 
@@ -135,12 +140,12 @@ span {
 # Header
 --------------------------------------------------------------*/
 #header {
-  background: #fff;
+  background: #fafafa;
   position: fixed;
   left: 0;
   top: 0;
   right: 0;
-  height: 48px;
+  height: 54px;
   z-index: 3;
   transition: all 0.5s ease;
 }
@@ -152,7 +157,7 @@ span {
 #header #logo h1 {
   color: #505050;
   font-family: "Philosopher", sans-serif;
-  font-size: 26px;
+  font-size: 30px;
   font-weight: 500;
   letter-spacing: 1px;
   margin: 0;
@@ -272,7 +277,8 @@ span {
 # Navigation Menu
 --------------------------------------------------------------*/
 /* Nav Menu Essentials */
-.nav-menu, .nav-menu * {
+.nav-menu,
+.nav-menu * {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -291,12 +297,12 @@ span {
   white-space: nowrap;
 }
 
-.nav-menu > li {
+.nav-menu>li {
   float: left;
 }
 
-.nav-menu li:hover > ul,
-.nav-menu li.sfHover > ul {
+.nav-menu li:hover>ul,
+.nav-menu li.sfHover>ul {
   display: block;
 }
 
@@ -330,8 +336,9 @@ span {
 
 /* Nav Meu Container */
 #nav-menu-container {
-  float: right;
+  position:absolute;
   margin: 0 0 0 0;
+  right: 20px;
 }
 
 @media (max-width: 1024px) {
@@ -354,12 +361,14 @@ span {
   transition: 0.3s;
 }
 
-.nav-menu li:hover > a, .nav-menu > .menu-active > a {
+.nav-menu li:hover>a,
+.nav-menu>.menu-active>a {
   color: #f18217;
 }
 
-.nav-menu > li {
+.nav-menu>li {
   margin-left: 10px;
+  padding-top: 5px;
 }
 
 .nav-menu ul {
@@ -382,7 +391,7 @@ span {
   text-transform: none;
 }
 
-.nav-menu ul li:hover > a {
+.nav-menu ul li:hover>a {
   color: #f18217;
 }
 
@@ -413,9 +422,10 @@ span {
 
 @media (max-width: 1024px) {
   #mobile-nav-toggle {
-    display: inline;
+    display: inline; 
+    right: 250px; 
   }
-}
+} 
 
 /* Mobile Nav Styling */
 #mobile-nav {
@@ -537,6 +547,15 @@ body.mobile-nav-active #mobile-nav-toggle i {
   text-transform: capitalize;
 }
 
+.section-title h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  font-weight: 100;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+}
+
 .section-title .separator {
   margin: 0;
 }
@@ -598,6 +617,7 @@ body.mobile-nav-active #mobile-nav-toggle i {
 
 /* About Us Section
 --------------------------------*/
+
 #about-us img {
   max-width: 100%;
 }
@@ -660,7 +680,7 @@ body.mobile-nav-active #mobile-nav-toggle i {
 
 /* Screenshots Section
 --------------------------------*/
-.owl-dot.active > span {
+.owl-dot.active>span {
   height: 10px !important;
   width: 10px !important;
 }
@@ -683,7 +703,8 @@ body.mobile-nav-active #mobile-nav-toggle i {
   margin-top: 10px;
 }
 
-.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
   background: #71c55d;
 }
 
@@ -693,6 +714,10 @@ body.mobile-nav-active #mobile-nav-toggle i {
 
 /* Team Section
 --------------------------------*/
+#team {
+  background: #FAFAFA;
+}
+
 #team .team-block {
   box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
   height: 192px;
@@ -754,7 +779,7 @@ body.mobile-nav-active #mobile-nav-toggle i {
   color: #673ab7;
 }
 
-#team .team-block .team-content ul > span {
+#team .team-block .team-content ul>span {
   display: inline-block;
   font-size: 14px;
   font-weight: 300;
@@ -786,16 +811,16 @@ body.mobile-nav-active #mobile-nav-toggle i {
   top: -29px;
 }
 
-#testimonials .top-top > h2 {
-  font-family: "Roboto" sans-serif;
-  font-size: 45px;
+#testimonials .top-top>h2 {
+  font-family: "Roboto"sans-serif;
+  font-size: 30px;
   font-weight: 100;
   letter-spacing: 2px;
   margin-bottom: 20px;
   text-transform: capitalize;
 }
 
-#testimonials .top-top > h4 {
+#testimonials .top-top>h4 {
   font: 700 12px Lato, sans-serif;
 }
 
@@ -845,6 +870,10 @@ body.mobile-nav-active #mobile-nav-toggle i {
 
 /* Pricing Table Section
 --------------------------------*/
+#pricing {
+  background: #FAFAFA;
+}
+
 #pricing .block-pricing {
   background: #fff;
   box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2), 0 0 4px 0 rgba(0, 0, 0, 0.19);
@@ -909,6 +938,10 @@ body.mobile-nav-active #mobile-nav-toggle i {
 
 /* Blog Section
 --------------------------------*/
+#blog {
+  background: #FAFAFA;
+}
+
 @media (max-width: 991px) {
   #blog .block-blog {
     margin-bottom: 30px;
@@ -946,7 +979,7 @@ body.mobile-nav-active #mobile-nav-toggle i {
   color: #673ab7;
 }
 
-#blog .block-blog .content-blog > span {
+#blog .block-blog .content-blog>span {
   float: left;
   font-size: 12px;
 }
@@ -968,7 +1001,7 @@ body.mobile-nav-active #mobile-nav-toggle i {
 /* Contact Section
 --------------------------------*/
 #contact {
-  background: #fff;
+  background: #FAFAFA;
 }
 
 #contact .info {
@@ -1035,7 +1068,9 @@ body.mobile-nav-active #mobile-nav-toggle i {
   margin-bottom: 15px;
 }
 
-#contact .form #sendmessage.show, #contact .form #errormessage.show, #contact .form .show {
+#contact .form #sendmessage.show,
+#contact .form #errormessage.show,
+#contact .form .show {
   display: block;
 }
 
@@ -1047,7 +1082,8 @@ body.mobile-nav-active #mobile-nav-toggle i {
   font-size: 13px;
 }
 
-#contact .form input, #contact .form textarea {
+#contact .form input,
+#contact .form textarea {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
@@ -1094,7 +1130,7 @@ body.mobile-nav-active #mobile-nav-toggle i {
   letter-spacing: 1px;
 }
 
-.footer .list-menu > h4 {
+.footer .list-menu>h4 {
   color: #fff;
   padding-bottom: 20px;
 }
@@ -1114,7 +1150,8 @@ body.mobile-nav-active #mobile-nav-toggle i {
   padding: 25px;
 }
 
-.footer .copyrights p, .footer .copyrights .credits {
+.footer .copyrights p,
+.footer .copyrights .credits {
   margin: 0;
   padding: 0;
   font-family: "Open Sans", sans-serif;
@@ -1123,7 +1160,8 @@ body.mobile-nav-active #mobile-nav-toggle i {
   letter-spacing: 0;
 }
 
-.footer .copyrights p a, .footer .copyrights .credits a {
+.footer .copyrights p a,
+.footer .copyrights .credits a {
   letter-spacing: 0;
   color: #f18217;
 }

@@ -8,54 +8,31 @@
       </p>
     </div>
   </div>
-
   <div class="container">
-    <div class="row justify-content-center">
-
-      <div class="col-lg-3 col-md-4">
-
-        <div class="info">
-          <div>
-            <i class="fa fa-map-marker"></i>
-            <p [innerHTML]="'footer.addressLine'|translate"></p>
-          </div>
-
-          <div class="email">
-            <i class="fa fa-envelope"></i>
-            <p>info@alskom.uz</p>
-          </div>
-
-          <div>
-            <i class="fa fa-phone"></i>
-            <p>78 147-11-00; 78 147-22-00</p>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="col-lg-5 col-md-8">
+    <div class="row">
+      <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-6 justify-content-center">
         <div class="form">
           <div id="sendmessage">Your message has been sent. Thank you!</div>
           <div id="errormessage"></div>
           <form (ngSubmit)="onSubmit()" class="contactForm">
             <div class="form-group">
               <input type="text" name="name" class="form-control" id="name" [placeholder]="'contact.fullName'|translate"
-                     data-rule="minlen:4" data-msg="Please enter at least 4 chars"/>
+                data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
               <div class="validation"></div>
             </div>
             <div class="form-group">
               <input type="text" name="phone" class="form-control" id="phone" [placeholder]="'common.phone'|translate"
-                     data-rule="minlen:4" data-msg="Please enter at least 4 chars"/>
+                data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
               <div class="validation"></div>
             </div>
             <div class="form-group">
-              <input type="email" class="form-control" name="email" id="email" placeholder="E-mail"
-                     data-rule="email" data-msg="Please enter a valid email"/>
+              <input type="email" class="form-control" name="email" id="email" placeholder="E-mail" data-rule="email"
+                data-msg="Please enter a valid email" />
               <div class="validation"></div>
             </div>
             <div class="form-group">
               <textarea class="form-control" name="message" rows="5" data-rule="required"
-                        data-msg="Please write something for us" [placeholder]="'contact.message'|translate"></textarea>
+                data-msg="Please write something for us" [placeholder]="'contact.message'|translate"></textarea>
               <div class="validation"></div>
             </div>
             <div class="text-center">
@@ -63,6 +40,11 @@
             </div>
           </form>
         </div>
+      </div>
+      <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-6">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11981.326668544132!2d69.2823649!3d41.3451442!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa5cacd4dc13ad2a0!2sALSKOM!5e0!3m2!1sen!2s!4v1568062206481!5m2!1sen!2s"
+          width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
       </div>
     </div>
   </div>

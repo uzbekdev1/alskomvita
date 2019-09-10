@@ -16,13 +16,14 @@
         <div class="block-pricing">
           <div class="table">
             <h2>
-              <a href="javascript:void(0)"(click)="openModal(item,template)">
-                <img [src]="baseUrl+item.image"  class="img-thumbnail"  alt="img">
+              <a href="javascript:void(0)" (click)="openModal(item,template)">
+                <img [src]="baseUrl+item.image" class="img-thumbnail" alt="img">
               </a>
             </h2>
             <h4 [innerHTML]="getTitle(item.name)"></h4>
             <div class="table_btn">
-              <a href="javascript:void(0)" class="btn" (click)="openModal(item,template)"> {{"common.readMore"|translate}}</a>
+              <a href="javascript:void(0)" class="btn" (click)="openModal(item,template)">
+                {{"common.readMore"|translate}}</a>
             </div>
           </div>
         </div>
@@ -41,18 +42,22 @@
     </button>
   </div>
 
-    <div class="modal-body">
+  <div class="modal-body">
 
-      <div [innerHtml]="item.description" *ngIf="item"></div>
+    <div [innerHtml]="item.description" *ngIf="item"></div>
 
-    </div>
+  </div>
 
-    <div class="modal-footer">
+  <div class="modal-footer">
 
-      <button type="button" class="btn btn-secondary" (click)="closeModal()">
-        {{"common.close"|translate}}
-      </button>
+    <a href="javascript:void (0)" class="btn btn-primary" (click)="orderNow($event)" data-target="#contact">
+      {{"common.order"|translate}}
+    </a>
 
-    </div>
+    <button type="button" class="btn btn-secondary" (click)="closeModal()">
+      {{"common.close"|translate}}
+    </button>
+
+  </div>
 
 </ng-template>

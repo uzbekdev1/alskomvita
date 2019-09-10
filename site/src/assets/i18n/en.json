@@ -15,9 +15,9 @@
     "listTitle": "The aim of the company is:",
     "listItem1": "providing reliable insurance guarantees to consumers of insurance services;",
     "listItem2": "the introduction of new financial instruments that contribute to meeting the needs of the employed layers of the population in the accumulation of funds in the long term and insurance coverage of their life and health;",
-    "listItem3": "satisfaction of the projected growth of the population’s need for insurance services (cumulative types of life insurance, voluntary medical insurance, life and health insurance against accidents, etc.);",
-    "listItem4": "implementation of international life and health insurance standards.",
-    "footer": "The company was issued a license of the Ministry of Finance of the Republic of Uzbekistan of the SF series No. 243 dated May 29, 2019 to carry out voluntary insurance activities in all classes of the life insurance industry, as well as classes 1 and 2 of the general insurance industry. <br> Formed authorized capital of the Company is the equivalent of 10.11 billion soums. <br> The company offers high-quality insurance services, financial protection in case of unforeseen circumstances, as well as the possibility of the formation of savings and capital increase. <br> “ALSKOM-VITA” - Protects what is really expensive - your life, the well-being of your loved ones and your future."
+    "listItem3": "meeting the projected growth of the population’s demand for insurance services (accumulative types of life insurance, voluntary medical insurance, life and health insurance against accidents, etc.);",
+    "listItem4": "implementation of international standards of life and health insurance.",
+    "footer": "The company was issued a license of the Ministry of Finance of the Republic of Uzbekistan of the SF series No. 243 dated May 29, 2019 to carry out voluntary insurance activities in all classes of the life insurance industry, as well as classes 1 and 2 of the general insurance industry.<br> The formed authorized capital of the Company is equivalent to 10.11 billion soums.<br> The company offers high-quality insurance services, financial protection in case of unforeseen circumstances, as well as the possibility of the formation of savings and capital increase.“ALSKOM-VITA” - Protects what is really expensive - your life, the well-being of your loved ones and your future."
   },
   "common": {
     "home": "Home",
@@ -36,7 +36,8 @@
     "close":"Close",
     "description":"Description",
     "experience":"Experience",
-    "partners": "Partners"
+    "partners": "Partners",
+    "order":"Order"
   },
   "footer": {
     "followUs": "Follow us",

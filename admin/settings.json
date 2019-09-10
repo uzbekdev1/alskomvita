@@ -73,7 +73,7 @@
             }
         ],
         "mainview": {
-            "show": true
+            "show": false
         },
         "listview": {
             "order": {},
@@ -157,29 +157,6 @@
                 }
             },
             {
-                "name": "branch_id",
-                "verbose": "Branch",
-                "control": {
-                    "select": true
-                },
-                "oneToMany": {
-                    "table": "branches",
-                    "pk": "id",
-                    "columns": [
-                        "name"
-                    ]
-                },
-                "type": "integer",
-                "allowNull": true,
-                "defaultValue": null,
-                "listview": {
-                    "show": false
-                },
-                "editview": {
-                    "show": true
-                }
-            },
-            {
                 "name": "language_id",
                 "verbose": "Language",
                 "control": {
@@ -197,6 +174,26 @@
                 "defaultValue": null,
                 "listview": {
                     "show": false
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "is_visible",
+                "verbose": "Is visible?",
+                "control": {
+                    "radio": true,
+                    "options": [
+                        "Yes",
+                        "No"
+                    ]
+                },
+                "type": "boolean",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
                 },
                 "editview": {
                     "show": true
@@ -302,114 +299,6 @@
                 "defaultValue": null,
                 "listview": {
                     "show": true
-                },
-                "editview": {
-                    "show": true
-                }
-            },
-            {
-                "name": "language_id",
-                "verbose": "Language",
-                "control": {
-                    "select": true
-                },
-                "oneToMany": {
-                    "table": "languages",
-                    "pk": "id",
-                    "columns": [
-                        "name"
-                    ]
-                },
-                "type": "integer",
-                "allowNull": true,
-                "defaultValue": null,
-                "listview": {
-                    "show": false
-                },
-                "editview": {
-                    "show": true
-                }
-            }
-        ],
-        "mainview": {
-            "show": true
-        },
-        "listview": {
-            "order": {},
-            "page": 25
-        },
-        "editview": {
-            "readonly": false
-        }
-    },
-    "branches": {
-        "slug": "Branches",
-        "table": {
-            "name": "branches",
-            "pk": "id",
-            "verbose": "Branches"
-        },
-        "columns": [
-            {
-                "name": "id",
-                "verbose": "#",
-                "control": {
-                    "text": true
-                },
-                "type": "integer",
-                "allowNull": false,
-                "defaultValue": null,
-                "listview": {
-                    "show": false
-                },
-                "editview": {
-                    "show": false
-                }
-            },
-            {
-                "name": "name",
-                "verbose": "Name",
-                "control": {
-                    "text": true
-                },
-                "type": "varchar(50)",
-                "allowNull": false,
-                "defaultValue": null,
-                "listview": {
-                    "show": true
-                },
-                "editview": {
-                    "show": true
-                }
-            },
-            {
-                "name": "image",
-                "verbose": "Image",
-                "control": {
-                    "file": true
-                },
-                "type": "varchar(250)",
-                "allowNull": false,
-                "defaultValue": null,
-                "listview": {
-                    "show": false
-                },
-                "editview": {
-                    "show": true
-                }
-            },
-            {
-                "name": "contact",
-                "verbose": "Contact",
-                "control": {
-                    "textarea": true,
-                    "editor": "ck-full"
-                },
-                "type": "text",
-                "allowNull": false,
-                "defaultValue": null,
-                "listview": {
-                    "show": false
                 },
                 "editview": {
                     "show": true
@@ -635,76 +524,12 @@
                 }
             },
             {
-                "name": "phone",
-                "verbose": "Phone",
-                "control": {
-                    "text": true
-                },
-                "type": "varchar(50)",
-                "allowNull": false,
-                "defaultValue": null,
-                "listview": {
-                    "show": true
-                },
-                "editview": {
-                    "show": true
-                }
-            },
-            {
-                "name": "email",
-                "verbose": "E-mail",
-                "control": {
-                    "text": true
-                },
-                "type": "varchar(50)",
-                "allowNull": false,
-                "defaultValue": null,
-                "listview": {
-                    "show": true
-                },
-                "editview": {
-                    "show": true
-                }
-            },
-            {
                 "name": "job_title",
                 "verbose": "Job Title",
                 "control": {
                     "text": true
                 },
                 "type": "varchar(250)",
-                "allowNull": false,
-                "defaultValue": null,
-                "listview": {
-                    "show": true
-                },
-                "editview": {
-                    "show": true
-                }
-            },
-            {
-                "name": "education",
-                "verbose": "Education",
-                "control": {
-                    "text": true
-                },
-                "type": "varchar(250)",
-                "allowNull": false,
-                "defaultValue": null,
-                "listview": {
-                    "show": true
-                },
-                "editview": {
-                    "show": true
-                }
-            },
-            {
-                "name": "date_of_birth",
-                "verbose": "Date of birth",
-                "control": {
-                    "date": true
-                },
-                "type": "date",
                 "allowNull": false,
                 "defaultValue": null,
                 "listview": {
@@ -731,8 +556,8 @@
                 }
             },
             {
-                "name": "experience",
-                "verbose": "Experience",
+                "name": "information",
+                "verbose": "Information",
                 "control": {
                     "textarea": true,
                     "editor": "ck-full"
@@ -807,28 +632,12 @@
                 }
             },
             {
-                "name": "title",
-                "verbose": "Title",
+                "name": "name",
+                "verbose": "Name",
                 "control": {
-                    "text": true
+                    "textarea": true
                 },
                 "type": "varchar(250)",
-                "allowNull": false,
-                "defaultValue": null,
-                "listview": {
-                    "show": true
-                },
-                "editview": {
-                    "show": true
-                }
-            },
-            {
-                "name": "description",
-                "verbose": "Description",
-                "control": {
-                    "text": true
-                },
-                "type": "text",
                 "allowNull": false,
                 "defaultValue": null,
                 "listview": {

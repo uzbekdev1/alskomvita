@@ -2,7 +2,6 @@ import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { VacanciesModule } from './vacancies/vacancies.module';
 import { ProductsModule } from './products/products.module';
-import { BranchesModule } from './branches/branches.module';
 import { NewsModule } from './news/news.module';
 import { LeadershipsModule } from './leaderships/leaderships.module';
 import { LanguagesModule } from './languages/languages.module';
@@ -13,8 +12,7 @@ import { PartnersModule } from './partners/partners.module';
     TypeOrmModule.forRoot(),
     LanguagesModule,
     ProductsModule,
-    VacanciesModule,
-    BranchesModule,
+    VacanciesModule, 
     NewsModule,
     LeadershipsModule,
     PartnersModule,
